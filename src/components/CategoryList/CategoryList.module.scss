@@ -7,19 +7,11 @@
     
     .CategoryList li {
     padding: .6vmin;
-    text-align: center;
+    text-align: left;
     border-radius: .5vmin;
     margin-bottom: .5vmin;
     }
     
     .CategoryList li:hover:not(.active) {
     cursor: pointer;
-    background-color: var(--orange);
-    color: var(--white);
-    }
-    
-    .CategoryList li.active {
-    color: var(--text-dark);
-    background-color: var(--tan-1);
-    border: .1vmin solid var(--tan-3);
     }

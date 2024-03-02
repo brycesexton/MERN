@@ -19,10 +19,10 @@ const Item = require('../models/item');
 
   await Item.deleteMany({});
   const items = await Item.create([
-    {name: 'Burton [ak] Cyclic GORE‑TEX 2L Jacket', image: 'https://www.burton.com/static/product/W24/10002107250_8.png?impolicy=bglt&imwidth=485', category: categories[0], price: 5.95},
-    {name: 'Turkey Sandwich', image: '🥪', category: categories[0], price: 6.95},
-    {name: 'Hot Dog', image: '🌭', category: categories[0], price: 3.95},
-    {name: 'Crab Plate', image: '🦀', category: categories[1], price: 14.95},
+    {name: 'Burton AK Cyclic Jacket', image: 'https://www.burton.com/static/product/W24/10002107250_8.png?impolicy=bglt&imwidth=485', category: categories[0], price: 5.95},
+    {name: 'Helly Hansen Ridge Infinity Jacket', image: 'https://www.hellyhansen.com/media/catalog/product/6/5/65809_658-1-onbody1.jpg?auto=webp&format=pjpg&fit=cover&height=640&width=640', category: categories[0], price: 6.95},
+    {name: 'Oakley Tc Reduct Jacket', image: 'https://assets2.oakley.com/cdn-record-files-pi/453210d1-ef37-440e-8dbe-af180118c41a/d93656c5-f23a-41db-acc9-b0120090595e/FOA404724__9YF_omfr1.png?impolicy=OO_heroxl', category: categories[0], price: 3.95},
+    {name: 'Burton AK Cyclic Pants', image: 'https://www.burton.com/static/product/W24/10000110963_7.png?impolicy=bglt&imwidth=382', category: categories[1], price: 14.95},
     {name: 'Fried Shrimp', image: '🍤', category: categories[1], price: 13.95},
     {name: 'Whole Lobster', image: '🦞', category: categories[1], price: 25.95},
     {name: 'Taco', image: '🌮', category: categories[2], price: 1.95},

@@ -23,7 +23,7 @@ async function handleSubmit(evt) {
     const user = await usersService.login(credentials);
     setUser(user);
   } catch {
-    setError('Log In Failed - Try Again');
+    setError('Login Failed - Try Again');
   }
 }
 
