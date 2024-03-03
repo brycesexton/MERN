@@ -183,7 +183,12 @@ function LoginForm(_ref) {
 function Logo() {
   return /*#__PURE__*/React.createElement("div", {
     className: _Logo_module_scss__WEBPACK_IMPORTED_MODULE_0__["default"].Logo
-  }, /*#__PURE__*/React.createElement("div", null, "SHRED"), /*#__PURE__*/React.createElement("div", null, "CAFE"));
+  }, /*#__PURE__*/React.createElement("img", {
+    src: "https://img.icons8.com/?size=48&id=aGeUpLpfJRoF&format=png",
+    alt: "Shred Cafe Logo"
+  }), /*#__PURE__*/React.createElement("div", {
+    className: _Logo_module_scss__WEBPACK_IMPORTED_MODULE_0__["default"].MainContainer
+  }, /*#__PURE__*/React.createElement("div", null, "SHRED"), /*#__PURE__*/React.createElement("div", null, "CAFE")));
 }
 
 /***/ }),
@@ -1227,33 +1232,30 @@ ___CSS_LOADER_EXPORT___.locals = {
 var ___CSS_LOADER_EXPORT___ = _node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_1___default()((_node_modules_css_loader_dist_runtime_sourceMaps_js__WEBPACK_IMPORTED_MODULE_0___default()));
 // Module
 ___CSS_LOADER_EXPORT___.push([module.id, `.EDeinQzfS2N2rVW_Z1GP {
-  position: relative;
-  height: 12vmin;
-  width: 12vmin;
   display: flex;
-  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  text-align: left;
+}
+
+.EDeinQzfS2N2rVW_Z1GP img {
+  width: 5vmin;
+  margin-bottom: 2vmin;
+}
+
+.dpYmxfRULS0YCtUhBLir {
+  display: flex;
+  flex-direction: column;
   align-items: center;
   color: black;
   font-weight: 700;
-  font-size: 2.7vmin;
+  font-size: 6vmin;
   text-shadow: 2px 2px 4px rgba(116, 111, 111, 0.5);
-}
-
-.EDeinQzfS2N2rVW_Z1GP::before {
-  content: "";
-  position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  -webkit-clip-path: polygon(50% 0%, 0% 100%, 100% 100%);
-  clip-path: polygon(50% 0%, 0% 100%, 100% 100%);
-  background: linear-gradient(to top left, var(--mountain-grey) 50%, var(--sky-blue) 50%);
-  z-index: -1;
-}`, "",{"version":3,"sources":["webpack://./src/components/Logo/Logo.module.scss"],"names":[],"mappings":"AAAA;EACI,kBAAA;EACA,cAAA;EACA,aAAA;EACA,aAAA;EACA,uBAAA;EACA,mBAAA;EACA,YAAA;EACA,gBAAA;EACA,kBAAA;EACA,iDAAA;AACJ;;AAEE;EACE,WAAA;EACA,kBAAA;EACA,MAAA;EACA,OAAA;EACA,QAAA;EACA,SAAA;EACA,sDAAA;EACQ,8CAAA;EACR,uFAAA;EACA,WAAA;AACJ","sourcesContent":[".Logo {\n    position: relative;\n    height: 12vmin;\n    width: 12vmin;\n    display: flex;\n    justify-content: center;\n    align-items: center;\n    color: black;\n    font-weight: 700;\n    font-size: 2.7vmin;\n    text-shadow: 2px 2px 4px rgba(116, 111, 111, 0.5)\n  }\n  \n  .Logo::before {\n    content: '';\n    position: absolute;\n    top: 0;\n    left: 0;\n    right: 0;\n    bottom: 0;\n    -webkit-clip-path: polygon(50% 0%, 0% 100%, 100% 100%);\n            clip-path: polygon(50% 0%, 0% 100%, 100% 100%);\n    background: linear-gradient(to top left, var(--mountain-grey) 50%, var(--sky-blue) 50%);\n    z-index: -1;\n  }"],"sourceRoot":""}]);
+}`, "",{"version":3,"sources":["webpack://./src/components/Logo/Logo.module.scss"],"names":[],"mappings":"AAAA;EACE,aAAA;EACA,sBAAA;EACA,mBAAA;EACA,gBAAA;AACF;;AAEA;EACE,YAAA;EACA,oBAAA;AACF;;AAEA;EACE,aAAA;EACA,sBAAA;EACA,mBAAA;EACA,YAAA;EACA,gBAAA;EACA,gBAAA;EACA,iDAAA;AACF","sourcesContent":[".Logo {\n  display: flex;\n  flex-direction: column;\n  align-items: center; \n  text-align: left; \n}\n\n.Logo img {\n  width: 5vmin; \n  margin-bottom: 2vmin; \n}\n\n.MainContainer {\n  display: flex;\n  flex-direction: column;\n  align-items: center; \n  color: black;\n  font-weight: 700;\n  font-size: 6vmin;\n  text-shadow: 2px 2px 4px rgba(116, 111, 111, 0.5);\n}"],"sourceRoot":""}]);
 // Exports
 ___CSS_LOADER_EXPORT___.locals = {
-	"Logo": `EDeinQzfS2N2rVW_Z1GP`
+	"Logo": `EDeinQzfS2N2rVW_Z1GP`,
+	"MainContainer": `dpYmxfRULS0YCtUhBLir`
 };
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (___CSS_LOADER_EXPORT___);
 
