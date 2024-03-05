@@ -1241,17 +1241,19 @@ ___CSS_LOADER_EXPORT___.push([module.id, `.EDeinQzfS2N2rVW_Z1GP {
 .EDeinQzfS2N2rVW_Z1GP img {
   width: 5vmin;
   margin-bottom: 2vmin;
+  margin-left: -7.5rem;
 }
 
 .dpYmxfRULS0YCtUhBLir {
   display: flex;
   flex-direction: column;
-  align-items: center;
+  align-items: left;
   color: black;
   font-weight: 700;
-  font-size: 6vmin;
+  font-size: 5.5vmin;
   text-shadow: 2px 2px 4px rgba(116, 111, 111, 0.5);
-}`, "",{"version":3,"sources":["webpack://./src/components/Logo/Logo.module.scss"],"names":[],"mappings":"AAAA;EACE,aAAA;EACA,sBAAA;EACA,mBAAA;EACA,gBAAA;AACF;;AAEA;EACE,YAAA;EACA,oBAAA;AACF;;AAEA;EACE,aAAA;EACA,sBAAA;EACA,mBAAA;EACA,YAAA;EACA,gBAAA;EACA,gBAAA;EACA,iDAAA;AACF","sourcesContent":[".Logo {\n  display: flex;\n  flex-direction: column;\n  align-items: center; \n  text-align: left; \n}\n\n.Logo img {\n  width: 5vmin; \n  margin-bottom: 2vmin; \n}\n\n.MainContainer {\n  display: flex;\n  flex-direction: column;\n  align-items: center; \n  color: black;\n  font-weight: 700;\n  font-size: 6vmin;\n  text-shadow: 2px 2px 4px rgba(116, 111, 111, 0.5);\n}"],"sourceRoot":""}]);
+  margin-left: -4rem;
+}`, "",{"version":3,"sources":["webpack://./src/components/Logo/Logo.module.scss"],"names":[],"mappings":"AAAA;EACE,aAAA;EACA,sBAAA;EACA,mBAAA;EACA,gBAAA;AACF;;AAEA;EACE,YAAA;EACA,oBAAA;EACA,oBAAA;AACF;;AAEA;EACE,aAAA;EACA,sBAAA;EACA,iBAAA;EACA,YAAA;EACA,gBAAA;EACA,kBAAA;EACA,iDAAA;EACA,kBAAA;AACF","sourcesContent":[".Logo {\n  display: flex;\n  flex-direction: column;\n  align-items: center; \n  text-align: left; \n}\n\n.Logo img {\n  width: 5vmin; \n  margin-bottom: 2vmin; \n  margin-left: -7.5rem;\n}\n\n.MainContainer {\n  display: flex;\n  flex-direction: column;\n  align-items: left; \n  color: black;\n  font-weight: 700;\n  font-size: 5.5vmin;\n  text-shadow: 2px 2px 4px rgba(116, 111, 111, 0.5);\n  margin-left: -4rem;\n}"],"sourceRoot":""}]);
 // Exports
 ___CSS_LOADER_EXPORT___.locals = {
 	"Logo": `EDeinQzfS2N2rVW_Z1GP`,
