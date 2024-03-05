@@ -1175,9 +1175,6 @@ ___CSS_LOADER_EXPORT___.push([module.id, `.ZeRW57PNaWpYVsw6JlaC {
   display: grid;
   grid-template-columns: 3vw 15.35vw 5.75vw 5.25vw;
   padding: 1vmin 0;
-  color: var(--text-light);
-  background-color: var(--white);
-  border-top: 0.1vmin solid var(--tan-3);
   font-size: 1vw;
 }
 
@@ -1202,12 +1199,27 @@ ___CSS_LOADER_EXPORT___.push([module.id, `.ZeRW57PNaWpYVsw6JlaC {
 .ZeRW57PNaWpYVsw6JlaC button {
   margin: 0;
   font-size: 1rem;
-}`, "",{"version":3,"sources":["webpack://./src/components/LineItem/LineItem.module.scss"],"names":[],"mappings":"AAAA;EACI,WAAA;EACA,aAAA;EACA,gDAAA;EACA,gBAAA;EACA,wBAAA;EACA,8BAAA;EACA,sCAAA;EACA,cAAA;AACJ;;AAEI;EACA,yCAAA;AACJ;;AAEI;EACA,aAAA;EACA,8BAAA;EACA,mBAAA;EACA,gBAAA;AACJ;;AAEI;EACA,aAAA;EACA,yBAAA;EACA,mBAAA;EACA,gBAAA;AACJ;;AAEI;EACA,SAAA;EACA,eAAA;AACJ","sourcesContent":[".LineItem {\n    width: 100%;\n    display: grid;\n    grid-template-columns: 3vw 15.35vw 5.75vw 5.25vw;\n    padding: 1vmin 0;\n    color: var(--text-light);\n    background-color: var(--white);\n    border-top: .1vmin solid var(--tan-3);\n    font-size: 1vw;\n    }\n    \n    .LineItem:last-child {\n    border-bottom: .1vmin solid var(--tan-3);\n    }\n    \n    .LineItem .qty {\n    display: flex;\n    justify-content: space-between;\n    align-items: center;\n    font-size: 1.3vw;\n    }\n    \n    .LineItem .extPrice {\n    display: flex;\n    justify-content: flex-end;\n    align-items: center;\n    font-size: 1.3vw;\n    }\n    \n    .LineItem button {\n    margin: 0;\n    font-size: 1rem;\n    }"],"sourceRoot":""}]);
+}
+
+.XRZU9gxtesrxE34j8R9J {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100px;
+  height: 100px;
+  overflow: hidden;
+}
+
+.XRZU9gxtesrxE34j8R9J img {
+  max-width: 100%;
+  max-height: 100%;
+}`, "",{"version":3,"sources":["webpack://./src/components/LineItem/LineItem.module.scss"],"names":[],"mappings":"AAAA;EACI,WAAA;EACA,aAAA;EACA,gDAAA;EACA,gBAAA;EACA,cAAA;AACJ;;AAEE;EACE,yCAAA;AACJ;;AAEE;EACE,aAAA;EACA,8BAAA;EACA,mBAAA;EACA,gBAAA;AACJ;;AAEE;EACE,aAAA;EACA,yBAAA;EACA,mBAAA;EACA,gBAAA;AACJ;;AAEE;EACE,SAAA;EACA,eAAA;AACJ;;AAEE;EACE,aAAA;EACA,uBAAA;EACA,mBAAA;EACA,YAAA;EACA,aAAA;EACA,gBAAA;AACJ;;AAEE;EACE,eAAA;EACA,gBAAA;AACJ","sourcesContent":[".LineItem {\n    width: 100%;\n    display: grid;\n    grid-template-columns: 3vw 15.35vw 5.75vw 5.25vw;\n    padding: 1vmin 0;\n    font-size: 1vw;\n  }\n  \n  .LineItem:last-child {\n    border-bottom: .1vmin solid var(--tan-3);\n  }\n  \n  .LineItem .qty {\n    display: flex;\n    justify-content: space-between;\n    align-items: center;\n    font-size: 1.3vw;\n  }\n  \n  .LineItem .extPrice {\n    display: flex;\n    justify-content: flex-end;\n    align-items: center;\n    font-size: 1.3vw;\n  }\n  \n  .LineItem button {\n    margin: 0;\n    font-size: 1rem;\n  }\n  \n  .flex-ctr-ctr {\n    display: flex;\n    justify-content: center;\n    align-items: center;\n    width: 100px;\n    height: 100px; \n    overflow: hidden; \n  }\n  \n  .flex-ctr-ctr img {\n    max-width: 100%;\n    max-height: 100%;\n  }"],"sourceRoot":""}]);
 // Exports
 ___CSS_LOADER_EXPORT___.locals = {
 	"LineItem": `ZeRW57PNaWpYVsw6JlaC`,
 	"qty": `Z_MQzAiRjTlxboCrh9om`,
-	"extPrice": `iZ6oJDRJlBAjRnxPhUy5`
+	"extPrice": `iZ6oJDRJlBAjRnxPhUy5`,
+	"flex-ctr-ctr": `XRZU9gxtesrxE34j8R9J`
 };
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (___CSS_LOADER_EXPORT___);
 
