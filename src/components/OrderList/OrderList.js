@@ -16,7 +16,7 @@ return (
     {orderItems.length ?
       orderItems
       :
-      <span className={styles.noOrders}>No Previous Orders</span>
+      <span className={styles.noOrders}>NO ORDERS YET</span>
     }
   </main>
 );

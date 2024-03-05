@@ -6,10 +6,6 @@
     font-size: 1vw;
   }
   
-  .LineItem:last-child {
-    border-bottom: .1vmin solid var(--tan-3);
-  }
-  
   .LineItem .qty {
     display: flex;
     justify-content: space-between;
@@ -27,15 +23,6 @@
   .LineItem button {
     margin: 0;
     font-size: 1rem;
-  }
-  
-  .flex-ctr-ctr {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 100px;
-    height: 100px; 
-    overflow: hidden; 
   }
   
   .flex-ctr-ctr img {

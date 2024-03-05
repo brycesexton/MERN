@@ -5,9 +5,6 @@
     align-items: center;
     margin-bottom: 3vmin;
     padding: 2vmin;
-    color: var(--text-light);
-    background-color: var(--white);
-    border: .1vmin solid var(--tan-3);
     border-radius: 1vmin;
     font-size: 4vmin;
   }
@@ -18,7 +15,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    border: 1vmin solid black;
+    border: .7rem solid black;
     border-radius: 5vmin; 
     overflow: hidden; 
   }
@@ -26,6 +23,18 @@
   .MenuListItem .buy {
     display: flex;
     flex-direction: column;
+  }
+
+  .MenuListItem .buy button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: border 0.1s;
+    border: .1rem solid white;
+  }
+  
+  .MenuListItem .buy button:hover {
+    border: .1rem solid black;
   }
   
   .MenuListItem .buy span {
@@ -38,4 +47,5 @@
     font-size: 2vw;
     text-align: center;
     color: var(--text-light);
+    margin-bottom: 3.3rem;
   }
