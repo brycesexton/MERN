@@ -1199,12 +1199,20 @@ ___CSS_LOADER_EXPORT___.push([module.id, `.ZeRW57PNaWpYVsw6JlaC {
 .ZeRW57PNaWpYVsw6JlaC button {
   margin: 0;
   font-size: 1rem;
+  border: 0.1rem solid black;
+  transition: background-color 0.3s, box-shadow 0.3s;
+}
+
+.ZeRW57PNaWpYVsw6JlaC button:hover {
+  background-color: black;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  color: whitesmoke;
 }
 
 .XRZU9gxtesrxE34j8R9J img {
   max-width: 100%;
   max-height: 100%;
-}`, "",{"version":3,"sources":["webpack://./src/components/LineItem/LineItem.module.scss"],"names":[],"mappings":"AAAA;EACI,WAAA;EACA,aAAA;EACA,gDAAA;EACA,gBAAA;EACA,cAAA;AACJ;;AAEE;EACE,aAAA;EACA,8BAAA;EACA,mBAAA;EACA,gBAAA;AACJ;;AAEE;EACE,aAAA;EACA,yBAAA;EACA,mBAAA;EACA,gBAAA;AACJ;;AAEE;EACE,SAAA;EACA,eAAA;AACJ;;AAEE;EACE,eAAA;EACA,gBAAA;AACJ","sourcesContent":[".LineItem {\n    width: 100%;\n    display: grid;\n    grid-template-columns: 3vw 15.35vw 5.75vw 5.25vw;\n    padding: 1vmin 0;\n    font-size: 1vw;\n  }\n  \n  .LineItem .qty {\n    display: flex;\n    justify-content: space-between;\n    align-items: center;\n    font-size: 1.3vw;\n  }\n  \n  .LineItem .extPrice {\n    display: flex;\n    justify-content: flex-end;\n    align-items: center;\n    font-size: 1.3vw;\n  }\n  \n  .LineItem button {\n    margin: 0;\n    font-size: 1rem;\n  }\n  \n  .flex-ctr-ctr img {\n    max-width: 100%;\n    max-height: 100%;\n  }"],"sourceRoot":""}]);
+}`, "",{"version":3,"sources":["webpack://./src/components/LineItem/LineItem.module.scss"],"names":[],"mappings":"AAAA;EACI,WAAA;EACA,aAAA;EACA,gDAAA;EACA,gBAAA;EACA,cAAA;AACJ;;AAEE;EACE,aAAA;EACA,8BAAA;EACA,mBAAA;EACA,gBAAA;AACJ;;AAEE;EACE,aAAA;EACA,yBAAA;EACA,mBAAA;EACA,gBAAA;AACJ;;AAEE;EACE,SAAA;EACA,eAAA;EACA,0BAAA;EACA,kDAAA;AACJ;;AAEE;EACE,uBAAA;EACA,wCAAA;EACA,iBAAA;AACJ;;AAEE;EACE,eAAA;EACA,gBAAA;AACJ","sourcesContent":[".LineItem {\n    width: 100%;\n    display: grid;\n    grid-template-columns: 3vw 15.35vw 5.75vw 5.25vw;\n    padding: 1vmin 0;\n    font-size: 1vw;\n  }\n  \n  .LineItem .qty {\n    display: flex;\n    justify-content: space-between;\n    align-items: center;\n    font-size: 1.3vw;\n  }\n  \n  .LineItem .extPrice {\n    display: flex;\n    justify-content: flex-end;\n    align-items: center;\n    font-size: 1.3vw;\n  }\n  \n  .LineItem button {\n    margin: 0;\n    font-size: 1rem;\n    border: .1rem solid black;\n    transition: background-color 0.3s, box-shadow 0.3s;\n  }\n\n  .LineItem button:hover {\n    background-color: black;\n    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);\n    color: whitesmoke;\n  }\n  \n  .flex-ctr-ctr img {\n    max-width: 100%;\n    max-height: 100%;\n  }"],"sourceRoot":""}]);
 // Exports
 ___CSS_LOADER_EXPORT___.locals = {
 	"LineItem": `ZeRW57PNaWpYVsw6JlaC`,
@@ -1443,7 +1451,9 @@ ___CSS_LOADER_EXPORT___.push([module.id, `.cPR75kdAXDGVxib0PszB {
   font-size: 1rem;
   color: var(--text-dark);
   transition: background-color 0.3s, box-shadow 0.3s;
-  margin-left: -0.08rem;
+  margin-left: -0.1px;
+  color: black;
+  border: 0.1rem solid black;
 }
 
 .cPR75kdAXDGVxib0PszB .V5OAbv7QFHo6WglNx0m0 button:hover {
@@ -1461,7 +1471,7 @@ ___CSS_LOADER_EXPORT___.push([module.id, `.cPR75kdAXDGVxib0PszB {
   position: absolute;
   top: 50vh;
   font-size: 2vmin;
-}`, "",{"version":3,"sources":["webpack://./src/components/OrderDetail/OrderDetail.module.scss"],"names":[],"mappings":"AAAA;EACI,sBAAA;EACA,2BAAA;EACA,mBAAA;EACA,cAAA;EACA,gBAAA;EACA,wBAAA;AACJ;;AAEE;EACE,WAAA;AACJ;;AAEE;EACE,iBAAA;EACA,2BAAA;EACA,4BAAA;EACA,WAAA;AACJ;;AAEE;EACE,WAAA;EACA,aAAA;EACA,4CAAA;EACA,gBAAA;EACA,wBAAA;AACJ;;AAEE;EACE,aAAA;EACA,uBAAA;EACA,mBAAA;EACA,gBAAA;EACA,uBAAA;AACJ;;AAEE;EACE,aAAA;EACA,uBAAA;EACA,iBAAA;EACA,eAAA;EACA,uBAAA;EACA,kDAAA;EACA,qBAAA;AACJ;;AAEE;EACE,uBAAA;EACA,wCAAA;EACA,iBAAA;AACJ;;AAEE;EACE,aAAA;EACA,yBAAA;AACJ;;AAEE;EACE,kBAAA;EACA,SAAA;EACA,gBAAA;AACJ","sourcesContent":[".OrderDetail {\n    flex-direction: column;\n    justify-content: flex-start;\n    align-items: center;\n    padding: 3vmin;\n    font-size: 2vmin;\n    color: var(--text-light);\n  }\n  \n  .OrderDetail .sectionHeading {\n    width: 100%\n  }\n  \n  .OrderDetail .lineItemContainer {\n    margin-top: 3vmin;\n    justify-content: flex-start;\n    height: calc(100vh - 18vmin);\n    width: 100%;\n  }\n  \n  .OrderDetail .total {\n    width: 100%;\n    display: grid;\n    grid-template-columns: 18.35vw 5.75vw 5.25vw;\n    padding: 1vmin 0;\n    color: var(--text-light);\n  }\n  \n  .OrderDetail .total span {\n    display: flex;\n    justify-content: center;\n    align-items: center;\n    font-size: 1.5vw;\n    color: var(--text-dark);\n  }\n\n  .OrderDetail .total button {\n    display: flex;\n    justify-content: center;\n    align-items: left;\n    font-size: 1rem;\n    color: var(--text-dark);\n    transition: background-color 0.3s, box-shadow 0.3s;\n    margin-left: -.08rem;\n  }\n  \n  .OrderDetail .total button:hover {\n    background-color: black;\n    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);\n    color: whitesmoke;\n  }\n  \n  .OrderDetail .total span.right {\n    display: flex;\n    justify-content: flex-end;\n  }\n  \n  .OrderDetail .hungry {\n    position: absolute;\n    top: 50vh;\n    font-size: 2vmin;\n  }\n"],"sourceRoot":""}]);
+}`, "",{"version":3,"sources":["webpack://./src/components/OrderDetail/OrderDetail.module.scss"],"names":[],"mappings":"AAAA;EACI,sBAAA;EACA,2BAAA;EACA,mBAAA;EACA,cAAA;EACA,gBAAA;EACA,wBAAA;AACJ;;AAEE;EACE,WAAA;AACJ;;AAEE;EACE,iBAAA;EACA,2BAAA;EACA,4BAAA;EACA,WAAA;AACJ;;AAEE;EACE,WAAA;EACA,aAAA;EACA,4CAAA;EACA,gBAAA;EACA,wBAAA;AACJ;;AAEE;EACE,aAAA;EACA,uBAAA;EACA,mBAAA;EACA,gBAAA;EACA,uBAAA;AACJ;;AAEE;EACE,aAAA;EACA,uBAAA;EACA,iBAAA;EACA,eAAA;EACA,uBAAA;EACA,kDAAA;EACA,mBAAA;EACA,YAAA;EACA,0BAAA;AACJ;;AAEE;EACE,uBAAA;EACA,wCAAA;EACA,iBAAA;AACJ;;AAEE;EACE,aAAA;EACA,yBAAA;AACJ;;AAEE;EACE,kBAAA;EACA,SAAA;EACA,gBAAA;AACJ","sourcesContent":[".OrderDetail {\n    flex-direction: column;\n    justify-content: flex-start;\n    align-items: center;\n    padding: 3vmin;\n    font-size: 2vmin;\n    color: var(--text-light);\n  }\n  \n  .OrderDetail .sectionHeading {\n    width: 100%\n  }\n  \n  .OrderDetail .lineItemContainer {\n    margin-top: 3vmin;\n    justify-content: flex-start;\n    height: calc(100vh - 18vmin);\n    width: 100%;\n  }\n  \n  .OrderDetail .total {\n    width: 100%;\n    display: grid;\n    grid-template-columns: 18.35vw 5.75vw 5.25vw;\n    padding: 1vmin 0;\n    color: var(--text-light);\n  }\n  \n  .OrderDetail .total span {\n    display: flex;\n    justify-content: center;\n    align-items: center;\n    font-size: 1.5vw;\n    color: var(--text-dark);\n  }\n\n  .OrderDetail .total button {\n    display: flex;\n    justify-content: center;\n    align-items: left;\n    font-size: 1rem;\n    color: var(--text-dark);\n    transition: background-color 0.3s, box-shadow 0.3s;\n    margin-left: -.10px;\n    color:black;\n    border: .1rem solid black;\n  }\n  \n  .OrderDetail .total button:hover {\n    background-color: black;\n    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);\n    color: whitesmoke;\n  }\n  \n  .OrderDetail .total span.right {\n    display: flex;\n    justify-content: flex-end;\n  }\n  \n  .OrderDetail .hungry {\n    position: absolute;\n    top: 50vh;\n    font-size: 2vmin;\n  }\n"],"sourceRoot":""}]);
 // Exports
 ___CSS_LOADER_EXPORT___.locals = {
 	"OrderDetail": `cPR75kdAXDGVxib0PszB`,
@@ -1608,15 +1618,15 @@ ___CSS_LOADER_EXPORT___.push([module.id, `.x80Y_LltA5PliUAZlphe {
 }
 
 .x80Y_LltA5PliUAZlphe .LEjmMxT_P5FEBKlpJkm9 {
-  transition: background-color 0.3s, box-shadow 0.3s;
-  margin-left: -0.08rem;
+  border: 0.1rem solid black;
+  transition: background-color 0.1s, box-shadow 0.1s;
 }
 
-.x80Y_LltA5PliUAZlphe .LEjmMxT_P5FEBKlpJkm9:hover {
+.x80Y_LltA5PliUAZlphe button:hover {
   background-color: black;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
   color: whitesmoke;
-}`, "",{"version":3,"sources":["webpack://./src/components/UserLogOut/UserLogOut.module.scss"],"names":[],"mappings":"AAAA;EACI,kBAAA;EACA,wBAAA;EACA,gBAAA;AACJ;;AAEI;EACE,kBAAA;AACN;;AACI;EACE,kDAAA;EACA,qBAAA;AAEN;;AACI;EACE,uBAAA;EACA,wCAAA;EACA,iBAAA;AAEN","sourcesContent":[".UserLogOut {\n    font-size: 1.5vmin;\n    color: var(--text-light);\n    text-align: left;\n    }\n    \n    .UserLogOut .email {\n      font-size: smaller;\n    }\n    .UserLogOut .button {\n      transition: background-color 0.3s, box-shadow 0.3s;\n      margin-left: -.08rem;\n    }\n\n    .UserLogOut .button:hover {\n      background-color: black;\n      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);\n      color: whitesmoke;\n    }\n    "],"sourceRoot":""}]);
+}`, "",{"version":3,"sources":["webpack://./src/components/UserLogOut/UserLogOut.module.scss"],"names":[],"mappings":"AAAA;EACI,kBAAA;EACA,wBAAA;EACA,gBAAA;AACJ;;AAEI;EACE,kBAAA;AACN;;AAEI;EACE,0BAAA;EACA,kDAAA;AACN;;AAEI;EACI,uBAAA;EACA,wCAAA;EACA,iBAAA;AACR","sourcesContent":[".UserLogOut {\n    font-size: 1.5vmin;\n    color: var(--text-light);\n    text-align: left;\n    }\n    \n    .UserLogOut .email {\n      font-size: smaller;\n    }\n\n    .UserLogOut .button {\n      border: .1rem solid black;\n      transition: background-color 0.1s, box-shadow 0.1s;\n    }\n\n    .UserLogOut button:hover {\n        background-color: black;\n        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);\n        color: whitesmoke;\n    }\n    "],"sourceRoot":""}]);
 // Exports
 ___CSS_LOADER_EXPORT___.locals = {
 	"UserLogOut": `x80Y_LltA5PliUAZlphe`,
