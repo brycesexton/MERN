@@ -4,15 +4,18 @@ import { useState } from 'react'
 import styles from './AppRouter.module.scss';
 import { getUser } from '../utilities/users-service';
 import AuthPage from '../pages/AuthPage/AuthPage';
+import NavBar from '../components/NavBar';
 
 const AppRouter = () => {
 	const [user, setUser] = useState(getUser())
 	return (
 		<Router>
 			<main className={styles.App}>
+			{/* <NavBar/> */}
 			{
 				user ?
 			<>
+
 			<Routes>
 				{routes.map(({ Component, key, path }) => (
 					<Route
