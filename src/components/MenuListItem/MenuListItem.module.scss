@@ -10,14 +10,18 @@
   }
   
   .MenuListItem .image {
-    height: 10vw;
-    width: 10vw;
+    height: 8vw;
+    width: 8vw;
     display: flex;
     justify-content: center;
     align-items: center;
     border: .7rem solid black;
     border-radius: 5vmin; 
-    overflow: hidden; 
+    overflow: hidden;
+    transition: transform .2s
+  }
+  .MenuListItem .image:hover {
+    transform: scale(1.6);
   }
   
   .MenuListItem .buy {

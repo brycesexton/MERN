@@ -1339,14 +1339,19 @@ ___CSS_LOADER_EXPORT___.push([module.id, `.X4tFBfG4MKknHvd01CKE {
 }
 
 .X4tFBfG4MKknHvd01CKE .dTwdG1Vxh_kNAcuyMLbz {
-  height: 10vw;
-  width: 10vw;
+  height: 8vw;
+  width: 8vw;
   display: flex;
   justify-content: center;
   align-items: center;
   border: 0.7rem solid black;
   border-radius: 5vmin;
   overflow: hidden;
+  transition: transform 0.2s;
+}
+
+.X4tFBfG4MKknHvd01CKE .dTwdG1Vxh_kNAcuyMLbz:hover {
+  transform: scale(1.6);
 }
 
 .X4tFBfG4MKknHvd01CKE .fO9kiPygtr0vmzsXoUxA {
@@ -1377,7 +1382,7 @@ ___CSS_LOADER_EXPORT___.push([module.id, `.X4tFBfG4MKknHvd01CKE {
   text-align: center;
   color: black;
   margin-bottom: 3.3rem;
-}`, "",{"version":3,"sources":["webpack://./src/components/MenuListItem/MenuListItem.module.scss"],"names":[],"mappings":"AAAA;EACI,WAAA;EACA,aAAA;EACA,8BAAA;EACA,mBAAA;EACA,oBAAA;EACA,cAAA;EACA,oBAAA;EACA,gBAAA;AACJ;;AAEE;EACE,YAAA;EACA,WAAA;EACA,aAAA;EACA,uBAAA;EACA,mBAAA;EACA,0BAAA;EACA,oBAAA;EACA,gBAAA;AACJ;;AAEE;EACE,aAAA;EACA,sBAAA;AACJ;;AAEE;EACE,aAAA;EACA,uBAAA;EACA,mBAAA;EACA,uBAAA;EACA,0BAAA;AACJ;;AAEE;EACE,0BAAA;AACJ;;AAEE;EACE,gBAAA;EACA,kBAAA;EACA,YAAA;AACJ;;AAEE;EACE,cAAA;EACA,kBAAA;EACA,YAAA;EACA,qBAAA;AACJ","sourcesContent":[".MenuListItem {\n    width: 100%;\n    display: flex;\n    justify-content: space-between;\n    align-items: center;\n    margin-bottom: 3vmin;\n    padding: 2vmin;\n    border-radius: 1vmin;\n    font-size: 4vmin;\n  }\n  \n  .MenuListItem .image {\n    height: 10vw;\n    width: 10vw;\n    display: flex;\n    justify-content: center;\n    align-items: center;\n    border: .7rem solid black;\n    border-radius: 5vmin; \n    overflow: hidden; \n  }\n  \n  .MenuListItem .buy {\n    display: flex;\n    flex-direction: column;\n  }\n\n  .MenuListItem .buy button {\n    display: flex;\n    justify-content: center;\n    align-items: center;\n    transition: border 0.1s;\n    border: .1rem solid white;\n  }\n  \n  .MenuListItem .buy button:hover {\n    border: .1rem solid black;\n  }\n  \n  .MenuListItem .buy span {\n    font-size: 1.7vw;\n    text-align: center;\n    color: black;\n  }\n  \n  .MenuListItem .name {\n    font-size: 2vw;\n    text-align: center;\n    color: black;\n    margin-bottom: 3.3rem;\n  }"],"sourceRoot":""}]);
+}`, "",{"version":3,"sources":["webpack://./src/components/MenuListItem/MenuListItem.module.scss"],"names":[],"mappings":"AAAA;EACI,WAAA;EACA,aAAA;EACA,8BAAA;EACA,mBAAA;EACA,oBAAA;EACA,cAAA;EACA,oBAAA;EACA,gBAAA;AACJ;;AAEE;EACE,WAAA;EACA,UAAA;EACA,aAAA;EACA,uBAAA;EACA,mBAAA;EACA,0BAAA;EACA,oBAAA;EACA,gBAAA;EACA,0BAAA;AACJ;;AACE;EACE,qBAAA;AAEJ;;AACE;EACE,aAAA;EACA,sBAAA;AAEJ;;AACE;EACE,aAAA;EACA,uBAAA;EACA,mBAAA;EACA,uBAAA;EACA,0BAAA;AAEJ;;AACE;EACE,0BAAA;AAEJ;;AACE;EACE,gBAAA;EACA,kBAAA;EACA,YAAA;AAEJ;;AACE;EACE,cAAA;EACA,kBAAA;EACA,YAAA;EACA,qBAAA;AAEJ","sourcesContent":[".MenuListItem {\n    width: 100%;\n    display: flex;\n    justify-content: space-between;\n    align-items: center;\n    margin-bottom: 3vmin;\n    padding: 2vmin;\n    border-radius: 1vmin;\n    font-size: 4vmin;\n  }\n  \n  .MenuListItem .image {\n    height: 8vw;\n    width: 8vw;\n    display: flex;\n    justify-content: center;\n    align-items: center;\n    border: .7rem solid black;\n    border-radius: 5vmin; \n    overflow: hidden;\n    transition: transform .2s\n  }\n  .MenuListItem .image:hover {\n    transform: scale(1.6);\n  }\n  \n  .MenuListItem .buy {\n    display: flex;\n    flex-direction: column;\n  }\n\n  .MenuListItem .buy button {\n    display: flex;\n    justify-content: center;\n    align-items: center;\n    transition: border 0.1s;\n    border: .1rem solid white;\n  }\n  \n  .MenuListItem .buy button:hover {\n    border: .1rem solid black;\n  }\n  \n  .MenuListItem .buy span {\n    font-size: 1.7vw;\n    text-align: center;\n    color: black;\n  }\n  \n  .MenuListItem .name {\n    font-size: 2vw;\n    text-align: center;\n    color: black;\n    margin-bottom: 3.3rem;\n  }"],"sourceRoot":""}]);
 // Exports
 ___CSS_LOADER_EXPORT___.locals = {
 	"MenuListItem": `X4tFBfG4MKknHvd01CKE`,
@@ -1557,9 +1562,6 @@ ___CSS_LOADER_EXPORT___.push([module.id, `.SbDKL2bctOyC5ZgA0KfW {
   align-items: center;
   margin-bottom: 3vmin;
   padding: 2vmin;
-  color: var(--text-light);
-  background-color: var(--white);
-  border: 0.2vmin solid var(--tan-3);
   border-radius: 1vmin;
   font-size: 2vmin;
   cursor: pointer;
@@ -1573,12 +1575,7 @@ ___CSS_LOADER_EXPORT___.push([module.id, `.SbDKL2bctOyC5ZgA0KfW {
   border-color: var(--orange);
   border-width: 0.2vmin;
   cursor: default;
-}
-
-.SbDKL2bctOyC5ZgA0KfW:not(.mOA_Z5p05rn7VW_2oU68):hover {
-  border-color: var(--orange);
-  border-width: 0.2vmin;
-}`, "",{"version":3,"sources":["webpack://./src/components/OrderListItem/OrderListItem.module.scss"],"names":[],"mappings":"AAAA;EACI,WAAA;EACA,aAAA;EACA,8BAAA;EACA,mBAAA;EACA,oBAAA;EACA,cAAA;EACA,wBAAA;EACA,8BAAA;EACA,kCAAA;EACA,oBAAA;EACA,gBAAA;EACA,eAAA;AACJ;;AAEI;EACA,sBAAA;AACJ;;AAEI;EACA,2BAAA;EACA,qBAAA;EACA,eAAA;AACJ;;AAEI;EACA,2BAAA;EACA,qBAAA;AACJ","sourcesContent":[".OrderListItem {\n    width: 100%;\n    display: flex;\n    justify-content: space-between;\n    align-items: center;\n    margin-bottom: 3vmin;\n    padding: 2vmin;\n    color: var(--text-light);\n    background-color: var(--white);\n    border: .2vmin solid var(--tan-3);\n    border-radius: 1vmin;\n    font-size: 2vmin;\n    cursor: pointer;\n    }\n    \n    .OrderListItem > div> div:first-child {\n    margin-bottom: .5vmin;\n    }\n    \n    .OrderListItem.selected {\n    border-color: var(--orange);\n    border-width: .2vmin;\n    cursor: default;\n    }\n    \n    .OrderListItem:not(.selected):hover {\n    border-color: var(--orange);\n    border-width: .2vmin;\n    }"],"sourceRoot":""}]);
+}`, "",{"version":3,"sources":["webpack://./src/components/OrderListItem/OrderListItem.module.scss"],"names":[],"mappings":"AAAA;EACI,WAAA;EACA,aAAA;EACA,8BAAA;EACA,mBAAA;EACA,oBAAA;EACA,cAAA;EACA,oBAAA;EACA,gBAAA;EACA,eAAA;AACJ;;AAEI;EACA,sBAAA;AACJ;;AAEI;EACA,2BAAA;EACA,qBAAA;EACA,eAAA;AACJ","sourcesContent":[".OrderListItem {\n    width: 100%;\n    display: flex;\n    justify-content: space-between;\n    align-items: center;\n    margin-bottom: 3vmin;\n    padding: 2vmin;\n    border-radius: 1vmin;\n    font-size: 2vmin;\n    cursor: pointer;\n    }\n    \n    .OrderListItem > div> div:first-child {\n    margin-bottom: .5vmin;\n    }\n    \n    .OrderListItem.selected {\n    border-color: var(--orange);\n    border-width: .2vmin;\n    cursor: default;\n    }\n"],"sourceRoot":""}]);
 // Exports
 ___CSS_LOADER_EXPORT___.locals = {
 	"OrderListItem": `SbDKL2bctOyC5ZgA0KfW`,
