@@ -184,7 +184,7 @@ function Logo() {
   return /*#__PURE__*/React.createElement("div", {
     className: _Logo_module_scss__WEBPACK_IMPORTED_MODULE_0__["default"].Logo
   }, /*#__PURE__*/React.createElement("img", {
-    src: "https://img.icons8.com/?size=48&id=aGeUpLpfJRoF&format=png",
+    src: "https://cdn-icons-png.flaticon.com/128/3778/3778927.png",
     alt: "Shred Cafe Logo"
   }), /*#__PURE__*/React.createElement("div", {
     className: _Logo_module_scss__WEBPACK_IMPORTED_MODULE_0__["default"].MainContainer
@@ -320,7 +320,7 @@ function OrderDetail(_ref) {
     className: _OrderDetail_module_scss__WEBPACK_IMPORTED_MODULE_0__["default"].right
   }, "$", order.orderTotal.toFixed(2)))) : /*#__PURE__*/React.createElement("div", {
     className: _OrderDetail_module_scss__WEBPACK_IMPORTED_MODULE_0__["default"].hungry
-  }, "Hungry?")));
+  }, "HUNGRY?")));
 }
 
 /***/ }),
@@ -529,7 +529,7 @@ function UserLogOut(_ref) {
   }
   return /*#__PURE__*/React.createElement("div", {
     className: _UserLogOut_module_scss__WEBPACK_IMPORTED_MODULE_0__["default"].UserLogOut
-  }, /*#__PURE__*/React.createElement("div", null, user.name), /*#__PURE__*/React.createElement("div", {
+  }, /*#__PURE__*/React.createElement("div", {
     className: _UserLogOut_module_scss__WEBPACK_IMPORTED_MODULE_0__["default"].email
   }, user.email), /*#__PURE__*/React.createElement("button", {
     className: "btn-sm",
@@ -1126,10 +1126,10 @@ function logOut() {
 var ___CSS_LOADER_EXPORT___ = _node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_1___default()((_node_modules_css_loader_dist_runtime_sourceMaps_js__WEBPACK_IMPORTED_MODULE_0___default()));
 // Module
 ___CSS_LOADER_EXPORT___.push([module.id, `.l8hJyaPvo9smd6LiNqWK {
-  color: var(--text-light);
+  color: black;
   list-style: none;
   padding: 0;
-  font-size: 1.7vw;
+  font-size: 1.6vw;
 }
 
 .l8hJyaPvo9smd6LiNqWK li {
@@ -1137,11 +1137,15 @@ ___CSS_LOADER_EXPORT___.push([module.id, `.l8hJyaPvo9smd6LiNqWK {
   text-align: left;
   border-radius: 0.5vmin;
   margin-bottom: 0.5vmin;
+  transition: background-color 0.1s, box-shadow 0.1s;
 }
 
 .l8hJyaPvo9smd6LiNqWK li:hover:not(._scckhAN2KPE1u73kR14) {
   cursor: pointer;
-}`, "",{"version":3,"sources":["webpack://./src/components/CategoryList/CategoryList.module.scss"],"names":[],"mappings":"AAAA;EACI,wBAAA;EACA,gBAAA;EACA,UAAA;EACA,gBAAA;AACJ;;AAEI;EACA,gBAAA;EACA,gBAAA;EACA,sBAAA;EACA,sBAAA;AACJ;;AAEI;EACA,eAAA;AACJ","sourcesContent":[".CategoryList {\n    color: var(--text-light);\n    list-style: none;\n    padding: 0;\n    font-size: 1.7vw;\n    }\n    \n    .CategoryList li {\n    padding: .6vmin;\n    text-align: left;\n    border-radius: .5vmin;\n    margin-bottom: .5vmin;\n    }\n    \n    .CategoryList li:hover:not(.active) {\n    cursor: pointer;\n    }"],"sourceRoot":""}]);
+  background-color: black;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  color: white;
+}`, "",{"version":3,"sources":["webpack://./src/components/CategoryList/CategoryList.module.scss"],"names":[],"mappings":"AAAA;EACI,YAAA;EACA,gBAAA;EACA,UAAA;EACA,gBAAA;AACJ;;AAEI;EACA,gBAAA;EACA,gBAAA;EACA,sBAAA;EACA,sBAAA;EACA,kDAAA;AACJ;;AAEI;EACA,eAAA;EACA,uBAAA;EACA,wCAAA;EACA,YAAA;AACJ","sourcesContent":[".CategoryList {\n    color: black;\n    list-style: none;\n    padding: 0;\n    font-size: 1.6vw;\n    }\n    \n    .CategoryList li {\n    padding: .6vmin;\n    text-align: left;\n    border-radius: .5vmin;\n    margin-bottom: .5vmin;\n    transition: background-color 0.1s, box-shadow 0.1s;\n    }\n    \n    .CategoryList li:hover:not(.active) {\n    cursor: pointer;\n    background-color: black;\n    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);\n    color: white;\n    }"],"sourceRoot":""}]);
 // Exports
 ___CSS_LOADER_EXPORT___.locals = {
 	"CategoryList": `l8hJyaPvo9smd6LiNqWK`,
@@ -1357,15 +1361,15 @@ ___CSS_LOADER_EXPORT___.push([module.id, `.X4tFBfG4MKknHvd01CKE {
 .X4tFBfG4MKknHvd01CKE .fO9kiPygtr0vmzsXoUxA span {
   font-size: 1.7vw;
   text-align: center;
-  color: var(--text-light);
+  color: black;
 }
 
 .X4tFBfG4MKknHvd01CKE .VR1OCl60qOXrRx1IzVEa {
   font-size: 2vw;
   text-align: center;
-  color: var(--text-light);
+  color: black;
   margin-bottom: 3.3rem;
-}`, "",{"version":3,"sources":["webpack://./src/components/MenuListItem/MenuListItem.module.scss"],"names":[],"mappings":"AAAA;EACI,WAAA;EACA,aAAA;EACA,8BAAA;EACA,mBAAA;EACA,oBAAA;EACA,cAAA;EACA,oBAAA;EACA,gBAAA;AACJ;;AAEE;EACE,YAAA;EACA,WAAA;EACA,aAAA;EACA,uBAAA;EACA,mBAAA;EACA,0BAAA;EACA,oBAAA;EACA,gBAAA;AACJ;;AAEE;EACE,aAAA;EACA,sBAAA;AACJ;;AAEE;EACE,aAAA;EACA,uBAAA;EACA,mBAAA;EACA,uBAAA;EACA,0BAAA;AACJ;;AAEE;EACE,0BAAA;AACJ;;AAEE;EACE,gBAAA;EACA,kBAAA;EACA,wBAAA;AACJ;;AAEE;EACE,cAAA;EACA,kBAAA;EACA,wBAAA;EACA,qBAAA;AACJ","sourcesContent":[".MenuListItem {\n    width: 100%;\n    display: flex;\n    justify-content: space-between;\n    align-items: center;\n    margin-bottom: 3vmin;\n    padding: 2vmin;\n    border-radius: 1vmin;\n    font-size: 4vmin;\n  }\n  \n  .MenuListItem .image {\n    height: 10vw;\n    width: 10vw;\n    display: flex;\n    justify-content: center;\n    align-items: center;\n    border: .7rem solid black;\n    border-radius: 5vmin; \n    overflow: hidden; \n  }\n  \n  .MenuListItem .buy {\n    display: flex;\n    flex-direction: column;\n  }\n\n  .MenuListItem .buy button {\n    display: flex;\n    justify-content: center;\n    align-items: center;\n    transition: border 0.1s;\n    border: .1rem solid white;\n  }\n  \n  .MenuListItem .buy button:hover {\n    border: .1rem solid black;\n  }\n  \n  .MenuListItem .buy span {\n    font-size: 1.7vw;\n    text-align: center;\n    color: var(--text-light);\n  }\n  \n  .MenuListItem .name {\n    font-size: 2vw;\n    text-align: center;\n    color: var(--text-light);\n    margin-bottom: 3.3rem;\n  }"],"sourceRoot":""}]);
+}`, "",{"version":3,"sources":["webpack://./src/components/MenuListItem/MenuListItem.module.scss"],"names":[],"mappings":"AAAA;EACI,WAAA;EACA,aAAA;EACA,8BAAA;EACA,mBAAA;EACA,oBAAA;EACA,cAAA;EACA,oBAAA;EACA,gBAAA;AACJ;;AAEE;EACE,YAAA;EACA,WAAA;EACA,aAAA;EACA,uBAAA;EACA,mBAAA;EACA,0BAAA;EACA,oBAAA;EACA,gBAAA;AACJ;;AAEE;EACE,aAAA;EACA,sBAAA;AACJ;;AAEE;EACE,aAAA;EACA,uBAAA;EACA,mBAAA;EACA,uBAAA;EACA,0BAAA;AACJ;;AAEE;EACE,0BAAA;AACJ;;AAEE;EACE,gBAAA;EACA,kBAAA;EACA,YAAA;AACJ;;AAEE;EACE,cAAA;EACA,kBAAA;EACA,YAAA;EACA,qBAAA;AACJ","sourcesContent":[".MenuListItem {\n    width: 100%;\n    display: flex;\n    justify-content: space-between;\n    align-items: center;\n    margin-bottom: 3vmin;\n    padding: 2vmin;\n    border-radius: 1vmin;\n    font-size: 4vmin;\n  }\n  \n  .MenuListItem .image {\n    height: 10vw;\n    width: 10vw;\n    display: flex;\n    justify-content: center;\n    align-items: center;\n    border: .7rem solid black;\n    border-radius: 5vmin; \n    overflow: hidden; \n  }\n  \n  .MenuListItem .buy {\n    display: flex;\n    flex-direction: column;\n  }\n\n  .MenuListItem .buy button {\n    display: flex;\n    justify-content: center;\n    align-items: center;\n    transition: border 0.1s;\n    border: .1rem solid white;\n  }\n  \n  .MenuListItem .buy button:hover {\n    border: .1rem solid black;\n  }\n  \n  .MenuListItem .buy span {\n    font-size: 1.7vw;\n    text-align: center;\n    color: black;\n  }\n  \n  .MenuListItem .name {\n    font-size: 2vw;\n    text-align: center;\n    color: black;\n    margin-bottom: 3.3rem;\n  }"],"sourceRoot":""}]);
 // Exports
 ___CSS_LOADER_EXPORT___.locals = {
 	"MenuListItem": `X4tFBfG4MKknHvd01CKE`,
@@ -1422,7 +1426,6 @@ ___CSS_LOADER_EXPORT___.push([module.id, `.cPR75kdAXDGVxib0PszB {
   grid-template-columns: 18.35vw 5.75vw 5.25vw;
   padding: 1vmin 0;
   color: var(--text-light);
-  border-top: 0.1vmin solid var(--tan-3);
 }
 
 .cPR75kdAXDGVxib0PszB .V5OAbv7QFHo6WglNx0m0 span {
@@ -1458,7 +1461,7 @@ ___CSS_LOADER_EXPORT___.push([module.id, `.cPR75kdAXDGVxib0PszB {
   position: absolute;
   top: 50vh;
   font-size: 2vmin;
-}`, "",{"version":3,"sources":["webpack://./src/components/OrderDetail/OrderDetail.module.scss"],"names":[],"mappings":"AAAA;EACI,sBAAA;EACA,2BAAA;EACA,mBAAA;EACA,cAAA;EACA,gBAAA;EACA,wBAAA;AACJ;;AAEE;EACE,WAAA;AACJ;;AAEE;EACE,iBAAA;EACA,2BAAA;EACA,4BAAA;EACA,WAAA;AACJ;;AAEE;EACE,WAAA;EACA,aAAA;EACA,4CAAA;EACA,gBAAA;EACA,wBAAA;EACA,sCAAA;AACJ;;AAEE;EACE,aAAA;EACA,uBAAA;EACA,mBAAA;EACA,gBAAA;EACA,uBAAA;AACJ;;AAEE;EACE,aAAA;EACA,uBAAA;EACA,iBAAA;EACA,eAAA;EACA,uBAAA;EACA,kDAAA;EACA,qBAAA;AACJ;;AAEE;EACE,uBAAA;EACA,wCAAA;EACA,iBAAA;AACJ;;AAEE;EACE,aAAA;EACA,yBAAA;AACJ;;AAEE;EACE,kBAAA;EACA,SAAA;EACA,gBAAA;AACJ","sourcesContent":[".OrderDetail {\n    flex-direction: column;\n    justify-content: flex-start;\n    align-items: center;\n    padding: 3vmin;\n    font-size: 2vmin;\n    color: var(--text-light);\n  }\n  \n  .OrderDetail .sectionHeading {\n    width: 100%\n  }\n  \n  .OrderDetail .lineItemContainer {\n    margin-top: 3vmin;\n    justify-content: flex-start;\n    height: calc(100vh - 18vmin);\n    width: 100%;\n  }\n  \n  .OrderDetail .total {\n    width: 100%;\n    display: grid;\n    grid-template-columns: 18.35vw 5.75vw 5.25vw;\n    padding: 1vmin 0;\n    color: var(--text-light);\n    border-top: .1vmin solid var(--tan-3);\n  }\n  \n  .OrderDetail .total span {\n    display: flex;\n    justify-content: center;\n    align-items: center;\n    font-size: 1.5vw;\n    color: var(--text-dark);\n  }\n\n  .OrderDetail .total button {\n    display: flex;\n    justify-content: center;\n    align-items: left;\n    font-size: 1rem;\n    color: var(--text-dark);\n    transition: background-color 0.3s, box-shadow 0.3s;\n    margin-left: -.08rem;\n  }\n  \n  .OrderDetail .total button:hover {\n    background-color: black;\n    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);\n    color: whitesmoke;\n  }\n  \n  .OrderDetail .total span.right {\n    display: flex;\n    justify-content: flex-end;\n  }\n  \n  .OrderDetail .hungry {\n    position: absolute;\n    top: 50vh;\n    font-size: 2vmin;\n  }\n"],"sourceRoot":""}]);
+}`, "",{"version":3,"sources":["webpack://./src/components/OrderDetail/OrderDetail.module.scss"],"names":[],"mappings":"AAAA;EACI,sBAAA;EACA,2BAAA;EACA,mBAAA;EACA,cAAA;EACA,gBAAA;EACA,wBAAA;AACJ;;AAEE;EACE,WAAA;AACJ;;AAEE;EACE,iBAAA;EACA,2BAAA;EACA,4BAAA;EACA,WAAA;AACJ;;AAEE;EACE,WAAA;EACA,aAAA;EACA,4CAAA;EACA,gBAAA;EACA,wBAAA;AACJ;;AAEE;EACE,aAAA;EACA,uBAAA;EACA,mBAAA;EACA,gBAAA;EACA,uBAAA;AACJ;;AAEE;EACE,aAAA;EACA,uBAAA;EACA,iBAAA;EACA,eAAA;EACA,uBAAA;EACA,kDAAA;EACA,qBAAA;AACJ;;AAEE;EACE,uBAAA;EACA,wCAAA;EACA,iBAAA;AACJ;;AAEE;EACE,aAAA;EACA,yBAAA;AACJ;;AAEE;EACE,kBAAA;EACA,SAAA;EACA,gBAAA;AACJ","sourcesContent":[".OrderDetail {\n    flex-direction: column;\n    justify-content: flex-start;\n    align-items: center;\n    padding: 3vmin;\n    font-size: 2vmin;\n    color: var(--text-light);\n  }\n  \n  .OrderDetail .sectionHeading {\n    width: 100%\n  }\n  \n  .OrderDetail .lineItemContainer {\n    margin-top: 3vmin;\n    justify-content: flex-start;\n    height: calc(100vh - 18vmin);\n    width: 100%;\n  }\n  \n  .OrderDetail .total {\n    width: 100%;\n    display: grid;\n    grid-template-columns: 18.35vw 5.75vw 5.25vw;\n    padding: 1vmin 0;\n    color: var(--text-light);\n  }\n  \n  .OrderDetail .total span {\n    display: flex;\n    justify-content: center;\n    align-items: center;\n    font-size: 1.5vw;\n    color: var(--text-dark);\n  }\n\n  .OrderDetail .total button {\n    display: flex;\n    justify-content: center;\n    align-items: left;\n    font-size: 1rem;\n    color: var(--text-dark);\n    transition: background-color 0.3s, box-shadow 0.3s;\n    margin-left: -.08rem;\n  }\n  \n  .OrderDetail .total button:hover {\n    background-color: black;\n    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);\n    color: whitesmoke;\n  }\n  \n  .OrderDetail .total span.right {\n    display: flex;\n    justify-content: flex-end;\n  }\n  \n  .OrderDetail .hungry {\n    position: absolute;\n    top: 50vh;\n    font-size: 2vmin;\n  }\n"],"sourceRoot":""}]);
 // Exports
 ___CSS_LOADER_EXPORT___.locals = {
 	"OrderDetail": `cPR75kdAXDGVxib0PszB`,
@@ -1597,16 +1600,28 @@ var ___CSS_LOADER_EXPORT___ = _node_modules_css_loader_dist_runtime_api_js__WEBP
 ___CSS_LOADER_EXPORT___.push([module.id, `.x80Y_LltA5PliUAZlphe {
   font-size: 1.5vmin;
   color: var(--text-light);
-  text-align: center;
+  text-align: left;
 }
 
 .x80Y_LltA5PliUAZlphe .qHiYGQB1ZEMvrGOQoBrO {
   font-size: smaller;
-}`, "",{"version":3,"sources":["webpack://./src/components/UserLogOut/UserLogOut.module.scss"],"names":[],"mappings":"AAAA;EACI,kBAAA;EACA,wBAAA;EACA,kBAAA;AACJ;;AAEI;EACE,kBAAA;AACN","sourcesContent":[".UserLogOut {\n    font-size: 1.5vmin;\n    color: var(--text-light);\n    text-align: center;\n    }\n    \n    .UserLogOut .email {\n      font-size: smaller;\n    }\n    "],"sourceRoot":""}]);
+}
+
+.x80Y_LltA5PliUAZlphe .LEjmMxT_P5FEBKlpJkm9 {
+  transition: background-color 0.3s, box-shadow 0.3s;
+  margin-left: -0.08rem;
+}
+
+.x80Y_LltA5PliUAZlphe .LEjmMxT_P5FEBKlpJkm9:hover {
+  background-color: black;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  color: whitesmoke;
+}`, "",{"version":3,"sources":["webpack://./src/components/UserLogOut/UserLogOut.module.scss"],"names":[],"mappings":"AAAA;EACI,kBAAA;EACA,wBAAA;EACA,gBAAA;AACJ;;AAEI;EACE,kBAAA;AACN;;AACI;EACE,kDAAA;EACA,qBAAA;AAEN;;AACI;EACE,uBAAA;EACA,wCAAA;EACA,iBAAA;AAEN","sourcesContent":[".UserLogOut {\n    font-size: 1.5vmin;\n    color: var(--text-light);\n    text-align: left;\n    }\n    \n    .UserLogOut .email {\n      font-size: smaller;\n    }\n    .UserLogOut .button {\n      transition: background-color 0.3s, box-shadow 0.3s;\n      margin-left: -.08rem;\n    }\n\n    .UserLogOut .button:hover {\n      background-color: black;\n      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);\n      color: whitesmoke;\n    }\n    "],"sourceRoot":""}]);
 // Exports
 ___CSS_LOADER_EXPORT___.locals = {
 	"UserLogOut": `x80Y_LltA5PliUAZlphe`,
-	"email": `qHiYGQB1ZEMvrGOQoBrO`
+	"email": `qHiYGQB1ZEMvrGOQoBrO`,
+	"button": `LEjmMxT_P5FEBKlpJkm9`
 };
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (___CSS_LOADER_EXPORT___);
 
