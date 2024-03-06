@@ -1328,7 +1328,25 @@ ___CSS_LOADER_EXPORT___.push([module.id, `.eBz5FvD9TgyIgfFi1MdG {
   margin: 3vmin 0;
   padding: 3vmin;
   overflow-y: scroll;
-}`, "",{"version":3,"sources":["webpack://./src/components/MenuList/MenuList.module.scss"],"names":[],"mappings":"AAAA;EACI,oBAAA;EACA,eAAA;EACA,cAAA;EACA,kBAAA;AACJ","sourcesContent":[".MenuList {\n    border-radius: 2vmin;\n    margin: 3vmin 0;\n    padding: 3vmin;\n    overflow-y: scroll;\n    }"],"sourceRoot":""}]);
+}
+
+.eBz5FvD9TgyIgfFi1MdG::-webkit-scrollbar {
+  width: 8px;
+}
+
+.eBz5FvD9TgyIgfFi1MdG::-webkit-scrollbar-track {
+  color: transparent;
+  border-radius: 20px;
+}
+
+.eBz5FvD9TgyIgfFi1MdG::-webkit-scrollbar-thumb {
+  background: black;
+  border-radius: 20px;
+}
+
+.eBz5FvD9TgyIgfFi1MdG::-webkit-scrollbar-thumb:hover {
+  --text-light: #968c84;
+}`, "",{"version":3,"sources":["webpack://./src/components/MenuList/MenuList.module.scss"],"names":[],"mappings":"AAAA;EACI,oBAAA;EACA,eAAA;EACA,cAAA;EACA,kBAAA;AACJ;;AAEA;EACQ,UAAA;AACR;;AAEA;EACQ,kBAAA;EACA,mBAAA;AACR;;AAEA;EACQ,iBAAA;EACA,mBAAA;AACR;;AAEA;EACU,qBAAA;AACV","sourcesContent":[".MenuList {\n    border-radius: 2vmin;\n    margin: 3vmin 0;\n    padding: 3vmin;\n    overflow-y: scroll;\n    }\n\n.MenuList::-webkit-scrollbar {\n        width: 8px;\n        }\n        \n.MenuList::-webkit-scrollbar-track {\n        color: transparent;\n        border-radius: 20px;\n        }\n        \n.MenuList::-webkit-scrollbar-thumb {\n        background:black; \n        border-radius: 20px;\n        }\n        \n.MenuList::-webkit-scrollbar-thumb:hover {\n          --text-light: #968c84;\n        }"],"sourceRoot":""}]);
 // Exports
 ___CSS_LOADER_EXPORT___.locals = {
 	"MenuList": `eBz5FvD9TgyIgfFi1MdG`

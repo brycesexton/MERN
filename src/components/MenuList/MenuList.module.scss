@@ -4,3 +4,21 @@
     padding: 3vmin;
     overflow-y: scroll;
     }
+
+.MenuList::-webkit-scrollbar {
+        width: 8px;
+        }
+        
+.MenuList::-webkit-scrollbar-track {
+        color: transparent;
+        border-radius: 20px;
+        }
+        
+.MenuList::-webkit-scrollbar-thumb {
+        background:black; 
+        border-radius: 20px;
+        }
+        
+.MenuList::-webkit-scrollbar-thumb:hover {
+          --text-light: #968c84;
+        }

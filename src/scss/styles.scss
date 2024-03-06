@@ -62,6 +62,23 @@ code {
 .scroll-y {
   overflow-y: scroll;
 }
+.scroll-y::-webkit-scrollbar {
+  width: 8px;
+  }
+  
+.scroll-y::-webkit-scrollbar-track {
+  color: transparent;
+  border-radius: 20px;
+  }
+  
+.scroll-y::-webkit-scrollbar-thumb {
+  background:black; 
+  border-radius: 20px;
+  }
+  
+.scroll-y::-webkit-scrollbar-thumb:hover {
+    --text-light: #968c84;
+  }
 
 .section-heading {
   display: flex;
