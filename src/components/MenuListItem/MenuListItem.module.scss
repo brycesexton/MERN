@@ -18,11 +18,13 @@
     border: .7rem solid black;
     border-radius: 2vmin; 
     overflow: hidden;
-    transition: transform .2s
+    transition: transform .2s;
+    background-color: white;
   }
-  .MenuListItem .image:hover {
-    transform: scale(1.6);
-  }
+
+.MenuListItem .image:hover {
+  transform: scale(1.7) translateX(1.5rem);
+}
   
   .MenuListItem .buy {
     display: flex;

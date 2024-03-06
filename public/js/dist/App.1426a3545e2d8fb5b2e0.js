@@ -1377,10 +1377,11 @@ ___CSS_LOADER_EXPORT___.push([module.id, `.X4tFBfG4MKknHvd01CKE {
   border-radius: 2vmin;
   overflow: hidden;
   transition: transform 0.2s;
+  background-color: white;
 }
 
 .X4tFBfG4MKknHvd01CKE .dTwdG1Vxh_kNAcuyMLbz:hover {
-  transform: scale(1.6);
+  transform: scale(1.7) translateX(1.5rem);
 }
 
 .X4tFBfG4MKknHvd01CKE .fO9kiPygtr0vmzsXoUxA {
@@ -1411,7 +1412,7 @@ ___CSS_LOADER_EXPORT___.push([module.id, `.X4tFBfG4MKknHvd01CKE {
   text-align: center;
   color: black;
   margin-bottom: 3.3rem;
-}`, "",{"version":3,"sources":["webpack://./src/components/MenuListItem/MenuListItem.module.scss"],"names":[],"mappings":"AAAA;EACI,WAAA;EACA,aAAA;EACA,8BAAA;EACA,mBAAA;EACA,oBAAA;EACA,cAAA;EACA,oBAAA;EACA,gBAAA;AACJ;;AAEE;EACE,WAAA;EACA,UAAA;EACA,aAAA;EACA,uBAAA;EACA,mBAAA;EACA,0BAAA;EACA,oBAAA;EACA,gBAAA;EACA,0BAAA;AACJ;;AACE;EACE,qBAAA;AAEJ;;AACE;EACE,aAAA;EACA,sBAAA;AAEJ;;AACE;EACE,aAAA;EACA,uBAAA;EACA,mBAAA;EACA,uBAAA;EACA,0BAAA;AAEJ;;AACE;EACE,0BAAA;AAEJ;;AACE;EACE,gBAAA;EACA,kBAAA;EACA,YAAA;AAEJ;;AACE;EACE,cAAA;EACA,kBAAA;EACA,YAAA;EACA,qBAAA;AAEJ","sourcesContent":[".MenuListItem {\n    width: 100%;\n    display: flex;\n    justify-content: space-between;\n    align-items: center;\n    margin-bottom: 3vmin;\n    padding: 2vmin;\n    border-radius: 1vmin;\n    font-size: 4vmin;\n  }\n  \n  .MenuListItem .image {\n    height: 8vw;\n    width: 8vw;\n    display: flex;\n    justify-content: center;\n    align-items: center;\n    border: .7rem solid black;\n    border-radius: 2vmin; \n    overflow: hidden;\n    transition: transform .2s\n  }\n  .MenuListItem .image:hover {\n    transform: scale(1.6);\n  }\n  \n  .MenuListItem .buy {\n    display: flex;\n    flex-direction: column;\n  }\n\n  .MenuListItem .buy button {\n    display: flex;\n    justify-content: center;\n    align-items: center;\n    transition: border 0.1s;\n    border: .1rem solid white;\n  }\n  \n  .MenuListItem .buy button:hover {\n    border: .1rem solid black;\n  }\n  \n  .MenuListItem .buy span {\n    font-size: 1.7vw;\n    text-align: center;\n    color: black;\n  }\n  \n  .MenuListItem .name {\n    font-size: 2vw;\n    text-align: center;\n    color: black;\n    margin-bottom: 3.3rem;\n  }"],"sourceRoot":""}]);
+}`, "",{"version":3,"sources":["webpack://./src/components/MenuListItem/MenuListItem.module.scss"],"names":[],"mappings":"AAAA;EACI,WAAA;EACA,aAAA;EACA,8BAAA;EACA,mBAAA;EACA,oBAAA;EACA,cAAA;EACA,oBAAA;EACA,gBAAA;AACJ;;AAEE;EACE,WAAA;EACA,UAAA;EACA,aAAA;EACA,uBAAA;EACA,mBAAA;EACA,0BAAA;EACA,oBAAA;EACA,gBAAA;EACA,0BAAA;EACA,uBAAA;AACJ;;AAEA;EACE,wCAAA;AACF;;AAEE;EACE,aAAA;EACA,sBAAA;AACJ;;AAEE;EACE,aAAA;EACA,uBAAA;EACA,mBAAA;EACA,uBAAA;EACA,0BAAA;AACJ;;AAEE;EACE,0BAAA;AACJ;;AAEE;EACE,gBAAA;EACA,kBAAA;EACA,YAAA;AACJ;;AAEE;EACE,cAAA;EACA,kBAAA;EACA,YAAA;EACA,qBAAA;AACJ","sourcesContent":[".MenuListItem {\n    width: 100%;\n    display: flex;\n    justify-content: space-between;\n    align-items: center;\n    margin-bottom: 3vmin;\n    padding: 2vmin;\n    border-radius: 1vmin;\n    font-size: 4vmin;\n  }\n  \n  .MenuListItem .image {\n    height: 8vw;\n    width: 8vw;\n    display: flex;\n    justify-content: center;\n    align-items: center;\n    border: .7rem solid black;\n    border-radius: 2vmin; \n    overflow: hidden;\n    transition: transform .2s;\n    background-color: white;\n  }\n\n.MenuListItem .image:hover {\n  transform: scale(1.7) translateX(1.5rem);\n}\n  \n  .MenuListItem .buy {\n    display: flex;\n    flex-direction: column;\n  }\n\n  .MenuListItem .buy button {\n    display: flex;\n    justify-content: center;\n    align-items: center;\n    transition: border 0.1s;\n    border: .1rem solid white;\n  }\n  \n  .MenuListItem .buy button:hover {\n    border: .1rem solid black;\n  }\n  \n  .MenuListItem .buy span {\n    font-size: 1.7vw;\n    text-align: center;\n    color: black;\n  }\n  \n  .MenuListItem .name {\n    font-size: 2vw;\n    text-align: center;\n    color: black;\n    margin-bottom: 3.3rem;\n  }"],"sourceRoot":""}]);
 // Exports
 ___CSS_LOADER_EXPORT___.locals = {
 	"MenuListItem": `X4tFBfG4MKknHvd01CKE`,
@@ -1505,7 +1506,12 @@ ___CSS_LOADER_EXPORT___.push([module.id, `.cPR75kdAXDGVxib0PszB {
   position: absolute;
   top: 50vh;
   font-size: 2vmin;
-}`, "",{"version":3,"sources":["webpack://./src/components/OrderDetail/OrderDetail.module.scss"],"names":[],"mappings":"AAAA;EACI,sBAAA;EACA,2BAAA;EACA,mBAAA;EACA,cAAA;EACA,gBAAA;EACA,wBAAA;AACJ;;AAEE;EACE,WAAA;AACJ;;AAEE;EACE,iBAAA;EACA,2BAAA;EACA,4BAAA;EACA,WAAA;AACJ;;AAEE;EACE,WAAA;EACA,aAAA;EACA,4CAAA;EACA,gBAAA;EACA,wBAAA;AACJ;;AAEE;EACE,aAAA;EACA,uBAAA;EACA,mBAAA;EACA,gBAAA;EACA,uBAAA;AACJ;;AAEE;EACE,aAAA;EACA,uBAAA;EACA,iBAAA;EACA,eAAA;EACA,uBAAA;EACA,kDAAA;EACA,mBAAA;EACA,YAAA;EACA,0BAAA;AACJ;;AAEE;EACE,uBAAA;EACA,wCAAA;EACA,iBAAA;AACJ;;AAEE;EACE,aAAA;EACA,yBAAA;AACJ;;AAEE;EACE,kBAAA;EACA,SAAA;EACA,gBAAA;AACJ","sourcesContent":[".OrderDetail {\n    flex-direction: column;\n    justify-content: flex-start;\n    align-items: center;\n    padding: 3vmin;\n    font-size: 2vmin;\n    color: var(--text-light);\n  }\n  \n  .OrderDetail .sectionHeading {\n    width: 100%\n  }\n  \n  .OrderDetail .lineItemContainer {\n    margin-top: 3vmin;\n    justify-content: flex-start;\n    height: calc(100vh - 18vmin);\n    width: 100%;\n  }\n  \n  .OrderDetail .total {\n    width: 100%;\n    display: grid;\n    grid-template-columns: 18.35vw 5.75vw 5.25vw;\n    padding: 1vmin 0;\n    color: var(--text-light);\n  }\n  \n  .OrderDetail .total span {\n    display: flex;\n    justify-content: center;\n    align-items: center;\n    font-size: 1.5vw;\n    color: var(--text-dark);\n  }\n\n  .OrderDetail .total button {\n    display: flex;\n    justify-content: center;\n    align-items: left;\n    font-size: 1rem;\n    color: var(--text-dark);\n    transition: background-color 0.3s, box-shadow 0.3s;\n    margin-left: -.10px;\n    color:black;\n    border: .1rem solid black;\n  }\n  \n  .OrderDetail .total button:hover {\n    background-color: black;\n    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);\n    color: whitesmoke;\n  }\n  \n  .OrderDetail .total span.right {\n    display: flex;\n    justify-content: flex-end;\n  }\n  \n  .OrderDetail .hungry {\n    position: absolute;\n    top: 50vh;\n    font-size: 2vmin;\n  }\n"],"sourceRoot":""}]);
+}
+
+.HJKB5rWmHyYVzHoRvo43 img {
+  width: 100px;
+  height: auto;
+}`, "",{"version":3,"sources":["webpack://./src/components/OrderDetail/OrderDetail.module.scss"],"names":[],"mappings":"AAAA;EACI,sBAAA;EACA,2BAAA;EACA,mBAAA;EACA,cAAA;EACA,gBAAA;EACA,wBAAA;AACJ;;AAEE;EACE,WAAA;AACJ;;AAEE;EACE,iBAAA;EACA,2BAAA;EACA,4BAAA;EACA,WAAA;AACJ;;AAEE;EACE,WAAA;EACA,aAAA;EACA,4CAAA;EACA,gBAAA;EACA,wBAAA;AACJ;;AAEE;EACE,aAAA;EACA,uBAAA;EACA,mBAAA;EACA,gBAAA;EACA,uBAAA;AACJ;;AAEE;EACE,aAAA;EACA,uBAAA;EACA,iBAAA;EACA,eAAA;EACA,uBAAA;EACA,kDAAA;EACA,mBAAA;EACA,YAAA;EACA,0BAAA;AACJ;;AAEE;EACE,uBAAA;EACA,wCAAA;EACA,iBAAA;AACJ;;AAEE;EACE,aAAA;EACA,yBAAA;AACJ;;AAEE;EACE,kBAAA;EACA,SAAA;EACA,gBAAA;AACJ;;AAEE;EACE,YAAA;EACA,YAAA;AACJ","sourcesContent":[".OrderDetail {\n    flex-direction: column;\n    justify-content: flex-start;\n    align-items: center;\n    padding: 3vmin;\n    font-size: 2vmin;\n    color: var(--text-light);\n  }\n  \n  .OrderDetail .sectionHeading {\n    width: 100%\n  }\n  \n  .OrderDetail .lineItemContainer {\n    margin-top: 3vmin;\n    justify-content: flex-start;\n    height: calc(100vh - 18vmin);\n    width: 100%;\n  }\n  \n  .OrderDetail .total {\n    width: 100%;\n    display: grid;\n    grid-template-columns: 18.35vw 5.75vw 5.25vw;\n    padding: 1vmin 0;\n    color: var(--text-light);\n  }\n  \n  .OrderDetail .total span {\n    display: flex;\n    justify-content: center;\n    align-items: center;\n    font-size: 1.5vw;\n    color: var(--text-dark);\n  }\n\n  .OrderDetail .total button {\n    display: flex;\n    justify-content: center;\n    align-items: left;\n    font-size: 1rem;\n    color: var(--text-dark);\n    transition: background-color 0.3s, box-shadow 0.3s;\n    margin-left: -.10px;\n    color:black;\n    border: .1rem solid black;\n  }\n  \n  .OrderDetail .total button:hover {\n    background-color: black;\n    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);\n    color: whitesmoke;\n  }\n  \n  .OrderDetail .total span.right {\n    display: flex;\n    justify-content: flex-end;\n  }\n  \n  .OrderDetail .hungry {\n    position: absolute;\n    top: 50vh;\n    font-size: 2vmin;\n  }\n\n  .flex-ctr-ctr img {\n    width: 100px;\n    height: auto;\n  }\n"],"sourceRoot":""}]);
 // Exports
 ___CSS_LOADER_EXPORT___.locals = {
 	"OrderDetail": `cPR75kdAXDGVxib0PszB`,
@@ -1513,7 +1519,8 @@ ___CSS_LOADER_EXPORT___.locals = {
 	"lineItemContainer": `vVkqXbRqxMYDCnUttflb`,
 	"total": `V5OAbv7QFHo6WglNx0m0`,
 	"right": `GtULiQQdndLNSQN4Yc97`,
-	"hungry": `dyrUhYTujwEUiMzpjxWX`
+	"hungry": `dyrUhYTujwEUiMzpjxWX`,
+	"flex-ctr-ctr": `HJKB5rWmHyYVzHoRvo43`
 };
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (___CSS_LOADER_EXPORT___);
 
@@ -1542,8 +1549,6 @@ ___CSS_LOADER_EXPORT___.push([module.id, `.l6Ner7C7O5I4V69HVVgW {
   display: flex;
   flex-direction: column;
   align-items: center;
-  background-color: var(--tan-1);
-  border: 0.1vmin solid var(--tan-3);
   border-radius: 2vmin;
   margin: 3vmin 0;
   padding: 3vmin;
@@ -1555,7 +1560,7 @@ ___CSS_LOADER_EXPORT___.push([module.id, `.l6Ner7C7O5I4V69HVVgW {
   font-size: 2vmin;
   position: absolute;
   top: 50vh;
-}`, "",{"version":3,"sources":["webpack://./src/components/OrderList/OrderList.module.scss"],"names":[],"mappings":"AAAA;EACI,aAAA;EACA,sBAAA;EACA,mBAAA;EACA,8BAAA;EACA,kCAAA;EACA,oBAAA;EACA,eAAA;EACA,cAAA;EACA,kBAAA;AACJ;;AAEI;EACA,wBAAA;EACA,gBAAA;EACA,kBAAA;EACA,SAAA;AACJ","sourcesContent":[".OrderList {\n    display: flex;\n    flex-direction: column;\n    align-items: center;\n    background-color: var(--tan-1);\n    border: .1vmin solid var(--tan-3);\n    border-radius: 2vmin;\n    margin: 3vmin 0;\n    padding: 3vmin;\n    overflow-y: scroll;\n    }\n    \n    .OrderList .noOrders {\n    color: var(--text-light);\n    font-size: 2vmin;\n    position: absolute;\n    top: calc(50vh);\n    }"],"sourceRoot":""}]);
+}`, "",{"version":3,"sources":["webpack://./src/components/OrderList/OrderList.module.scss"],"names":[],"mappings":"AAAA;EACI,aAAA;EACA,sBAAA;EACA,mBAAA;EACA,oBAAA;EACA,eAAA;EACA,cAAA;EACA,kBAAA;AACJ;;AAEI;EACA,wBAAA;EACA,gBAAA;EACA,kBAAA;EACA,SAAA;AACJ","sourcesContent":[".OrderList {\n    display: flex;\n    flex-direction: column;\n    align-items: center;\n    border-radius: 2vmin;\n    margin: 3vmin 0;\n    padding: 3vmin;\n    overflow-y: scroll;\n    }\n    \n    .OrderList .noOrders {\n    color: var(--text-light);\n    font-size: 2vmin;\n    position: absolute;\n    top: calc(50vh);\n    }"],"sourceRoot":""}]);
 // Exports
 ___CSS_LOADER_EXPORT___.locals = {
 	"OrderList": `l6Ner7C7O5I4V69HVVgW`,
