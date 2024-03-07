@@ -63,7 +63,8 @@
     font-size: 2vmin;
   }
 
-  .flex-ctr-ctr img {
-    width: 100px;
-    height: auto;
-  }
+.lineItemContainer img {
+    width: 75%;
+    height: 55%;
+    object-fit: contain;
+}

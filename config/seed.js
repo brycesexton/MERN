@@ -3,10 +3,12 @@ require('./database');
 
 const Category = require('../models/category');
 const Item = require('../models/item');
+// const Order = require('../models/order');
 
 (async function() {
-
+  // await Order.deleteMany({});
   await Category.deleteMany({});
+
   const categories = await Category.create([
     {name: 'Jackets', sortOrder: 10},
     {name: 'Pants', sortOrder: 20},
@@ -23,8 +25,8 @@ const Item = require('../models/item');
     {name: 'DC Anorak Jacket', image: 'https://curated-uploads.imgix.net/AgAAAB0ANB6OYpurMDGNFDok7nlfDg.png?auto=compress%2Cformat&ch=Width%2CDPR%2CSave-Data&ixlib=react-9.4.0&w=2066', category: categories[0], price: 277.45},
     {name: 'North Face Chakal Jacket', image: 'https://curated-upload.imgix.net/AgAAAB0AzOCpZwYZOcaLDCdFH1VAOA.png?auto=compress%2Cformat&ch=Width%2CDPR%2CSave-Data&ixlib=react-9.4.0&w=2066', category: categories[0], price: 247.45},
     {name: 'Quiksilver Sycamore Jacket', image: 'https://curated-upload.imgix.net/AgAAAB0Axm0hgRqtPxqe3GfsW-LGuw.jpg?auto=compress%2Cformat&ch=Width%2CDPR%2CSave-Data&ixlib=react-9.4.0&w=2066', category: categories[0], price: 208.95},
-    {name: 'Oakley TC Reduct Jacket', image: 'https://assets2.oakley.com/cdn-record-files-pi/453210d1-ef37-440e-8dbe-af180118c41a/d93656c5-f23a-41db-acc9-b0120090595e/FOA404724__9YF_omfr1.png?impolicy=OO_heroxl', category: categories[0], price: 395.80},
-    {name: 'Helly Hansen Sogn Bib Pants', image: 'https://curated-upload.imgix.net/AgAAAB0AxyWgCL83P0KCzGq5utKpNw.webp?auto=compress%2Cformat&ch=Width%2CDPR%2CSave-Data&ixlib=react-9.4.0&w=2066', category: categories[1], price: 375.95},
+    {name: 'Oakley TC Reduct Jacket', image: 'https://www.tradeinn.com/f/13974/139743291_2/oakley-tc-skull-reduct-shell-jacket.jpg', category: categories[0], price: 395.80},
+    {name: 'Mountain Hardwear Bib Pants', image: 'https://www.bergsskishop.com/images_app/medium/87182.jpg', category: categories[1], price: 375.95},
     {name: 'Burton Reserve 2L Bib Pants', image: 'https://curated-uploads.imgix.net/AgAAAB0Amnamk_uJNfmOXZupmy38OQ.png?auto=compress%2Cformat&ch=Width%2CDPR%2CSave-Data&ixlib=react-9.4.0&w=2066', category: categories[1], price: 209.95},
     {name: 'Rossignol SKPR Bib Pants', image: 'https://curated-uploads.imgix.net/AgAAAB0A8eUENJQ_MiuxAcfNjoJLAw.png?auto=compress%2Cformat&ch=Width%2CDPR%2CSave-Data&ixlib=react-9.4.0&w=2066', category: categories[1], price: 432.13},
     {name: 'DC Docile Bib Pants', image: 'https://curated-upload.imgix.net/AgAAAB0AiREhZgUuN8OZALOejaZhgg.jpg?auto=compress%2Cformat&ch=Width%2CDPR%2CSave-Data&ixlib=react-9.4.0&w=2066', category: categories[1], price: 135.95},

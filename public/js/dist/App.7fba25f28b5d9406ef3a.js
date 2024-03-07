@@ -99,8 +99,6 @@ function LineItem(_ref) {
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
 /* harmony import */ var _utilities_users_service__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../../utilities/users-service */ "./src/utilities/users-service.js");
 /* provided dependency */ var React = __webpack_require__(/*! react */ "./node_modules/react/index.js");
-function asyncGeneratorStep(gen, resolve, reject, _next, _throw, key, arg) { try { var info = gen[key](arg); var value = info.value; } catch (error) { reject(error); return; } if (info.done) { resolve(value); } else { Promise.resolve(value).then(_next, _throw); } }
-function _asyncToGenerator(fn) { return function () { var self = this, args = arguments; return new Promise(function (resolve, reject) { var gen = fn.apply(self, args); function _next(value) { asyncGeneratorStep(gen, resolve, reject, _next, _throw, "next", value); } function _throw(err) { asyncGeneratorStep(gen, resolve, reject, _next, _throw, "throw", err); } _next(undefined); }); }; }
 function ownKeys(object, enumerableOnly) { var keys = Object.keys(object); if (Object.getOwnPropertySymbols) { var symbols = Object.getOwnPropertySymbols(object); enumerableOnly && (symbols = symbols.filter(function (sym) { return Object.getOwnPropertyDescriptor(object, sym).enumerable; })), keys.push.apply(keys, symbols); } return keys; }
 function _objectSpread(target) { for (var i = 1; i < arguments.length; i++) { var source = null != arguments[i] ? arguments[i] : {}; i % 2 ? ownKeys(Object(source), !0).forEach(function (key) { _defineProperty(target, key, source[key]); }) : Object.getOwnPropertyDescriptors ? Object.defineProperties(target, Object.getOwnPropertyDescriptors(source)) : ownKeys(Object(source)).forEach(function (key) { Object.defineProperty(target, key, Object.getOwnPropertyDescriptor(source, key)); }); } return target; }
 function _defineProperty(obj, key, value) { key = _toPropertyKey(key); if (key in obj) { Object.defineProperty(obj, key, { value: value, enumerable: true, configurable: true, writable: true }); } else { obj[key] = value; } return obj; }
@@ -123,24 +121,18 @@ function LoginForm(_ref) {
     }));
     setError('');
   }
-  function handleSubmit(_x) {
-    return _handleSubmit.apply(this, arguments);
-  }
-  function _handleSubmit() {
-    _handleSubmit = _asyncToGenerator(function* (evt) {
-      // Prevent form from being submitted to the server
-      evt.preventDefault();
-      try {
-        // The promise returned by the signUp service method
-        // will resolve to the user object included in the
-        // payload of the JSON Web Token (JWT)
-        const user = yield _utilities_users_service__WEBPACK_IMPORTED_MODULE_1__.login(credentials);
-        setUser(user);
-      } catch (_unused) {
-        setError('Login Failed - Try Again');
-      }
-    });
-    return _handleSubmit.apply(this, arguments);
+  async function handleSubmit(evt) {
+    // Prevent form from being submitted to the server
+    evt.preventDefault();
+    try {
+      // The promise returned by the signUp service method
+      // will resolve to the user object included in the
+      // payload of the JSON Web Token (JWT)
+      const user = await _utilities_users_service__WEBPACK_IMPORTED_MODULE_1__.login(credentials);
+      setUser(user);
+    } catch (_unused) {
+      setError('Login Failed - Try Again');
+    }
   }
   return /*#__PURE__*/React.createElement("div", null, /*#__PURE__*/React.createElement("div", {
     className: "form-container"
@@ -433,52 +425,43 @@ function _objectSpread(target) { for (var i = 1; i < arguments.length; i++) { va
 function _defineProperty(obj, key, value) { key = _toPropertyKey(key); if (key in obj) { Object.defineProperty(obj, key, { value: value, enumerable: true, configurable: true, writable: true }); } else { obj[key] = value; } return obj; }
 function _toPropertyKey(arg) { var key = _toPrimitive(arg, "string"); return typeof key === "symbol" ? key : String(key); }
 function _toPrimitive(input, hint) { if (typeof input !== "object" || input === null) return input; var prim = input[Symbol.toPrimitive]; if (prim !== undefined) { var res = prim.call(input, hint || "default"); if (typeof res !== "object") return res; throw new TypeError("@@toPrimitive must return a primitive value."); } return (hint === "string" ? String : Number)(input); }
-function asyncGeneratorStep(gen, resolve, reject, _next, _throw, key, arg) { try { var info = gen[key](arg); var value = info.value; } catch (error) { reject(error); return; } if (info.done) { resolve(value); } else { Promise.resolve(value).then(_next, _throw); } }
-function _asyncToGenerator(fn) { return function () { var self = this, args = arguments; return new Promise(function (resolve, reject) { var gen = fn.apply(self, args); function _next(value) { asyncGeneratorStep(gen, resolve, reject, _next, _throw, "next", value); } function _throw(err) { asyncGeneratorStep(gen, resolve, reject, _next, _throw, "throw", err); } _next(undefined); }); }; }
 
 
 class SignUpForm extends react__WEBPACK_IMPORTED_MODULE_0__.Component {
   constructor() {
-    var _this;
     super(...arguments);
-    _this = this;
-    this.state = {
+    _defineProperty(this, "state", {
       name: '',
       email: '',
       password: '',
       confirm: '',
       error: ''
-    };
-    this.handleChange = evt => {
+    });
+    _defineProperty(this, "handleChange", evt => {
       this.setState({
         [evt.target.name]: evt.target.value,
         error: ''
       });
-    };
-    this.handleSubmit = /*#__PURE__*/function () {
-      var _ref = _asyncToGenerator(function* (evt) {
-        evt.preventDefault();
-        try {
-          const formData = _objectSpread({}, _this.state);
-          delete formData.confirm;
-          delete formData.error;
-          // The promise returned by the signUp service method
-          // will resolve to the user object included in the
-          // payload of the JSON Web Token (JWT)
-          const user = yield (0,_utilities_users_service__WEBPACK_IMPORTED_MODULE_1__.signUp)(formData);
-          // Baby step
-          _this.props.setUser(user);
-        } catch (_unused) {
-          // An error happened on the server
-          _this.setState({
-            error: 'Sign Up Failed - Try Again'
-          });
-        }
-      });
-      return function (_x) {
-        return _ref.apply(this, arguments);
-      };
-    }();
+    });
+    _defineProperty(this, "handleSubmit", async evt => {
+      evt.preventDefault();
+      try {
+        const formData = _objectSpread({}, this.state);
+        delete formData.confirm;
+        delete formData.error;
+        // The promise returned by the signUp service method
+        // will resolve to the user object included in the
+        // payload of the JSON Web Token (JWT)
+        const user = await (0,_utilities_users_service__WEBPACK_IMPORTED_MODULE_1__.signUp)(formData);
+        // Baby step
+        this.props.setUser(user);
+      } catch (_unused) {
+        // An error happened on the server
+        this.setState({
+          error: 'Sign Up Failed - Try Again'
+        });
+      }
+    });
   }
   // We must override the render method
   // The render method is the equivalent to a function-based component
@@ -642,8 +625,6 @@ function AuthPage(_ref) {
 /* harmony import */ var _components_OrderDetail_OrderDetail__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ../../components/OrderDetail/OrderDetail */ "./src/components/OrderDetail/OrderDetail.js");
 /* harmony import */ var _components_UserLogOut_UserLogOut__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ../../components/UserLogOut/UserLogOut */ "./src/components/UserLogOut/UserLogOut.js");
 /* provided dependency */ var React = __webpack_require__(/*! react */ "./node_modules/react/index.js");
-function asyncGeneratorStep(gen, resolve, reject, _next, _throw, key, arg) { try { var info = gen[key](arg); var value = info.value; } catch (error) { reject(error); return; } if (info.done) { resolve(value); } else { Promise.resolve(value).then(_next, _throw); } }
-function _asyncToGenerator(fn) { return function () { var self = this, args = arguments; return new Promise(function (resolve, reject) { var gen = fn.apply(self, args); function _next(value) { asyncGeneratorStep(gen, resolve, reject, _next, _throw, "next", value); } function _throw(err) { asyncGeneratorStep(gen, resolve, reject, _next, _throw, "throw", err); } _next(undefined); }); }; }
 
 
 
@@ -665,31 +646,19 @@ function NewOrderPage(_ref) {
   const categoriesRef = (0,react__WEBPACK_IMPORTED_MODULE_0__.useRef)([]);
   const navigate = (0,react_router_dom__WEBPACK_IMPORTED_MODULE_7__.useNavigate)();
   (0,react__WEBPACK_IMPORTED_MODULE_0__.useEffect)(function () {
-    function getItems() {
-      return _getItems.apply(this, arguments);
-    }
-    function _getItems() {
-      _getItems = _asyncToGenerator(function* () {
-        const items = yield _utilities_items_api__WEBPACK_IMPORTED_MODULE_8__.getAll();
-        categoriesRef.current = items.reduce((cats, item) => {
-          const cat = item.category.name;
-          return cats.includes(cat) ? cats : [...cats, cat];
-        }, []);
-        setMenuItems(items);
-        setActiveCat(categoriesRef.current[0]);
-      });
-      return _getItems.apply(this, arguments);
+    async function getItems() {
+      const items = await _utilities_items_api__WEBPACK_IMPORTED_MODULE_8__.getAll();
+      categoriesRef.current = items.reduce((cats, item) => {
+        const cat = item.category.name;
+        return cats.includes(cat) ? cats : [...cats, cat];
+      }, []);
+      setMenuItems(items);
+      setActiveCat(categoriesRef.current[0]);
     }
     getItems();
-    function getCart() {
-      return _getCart.apply(this, arguments);
-    }
-    function _getCart() {
-      _getCart = _asyncToGenerator(function* () {
-        const cart = yield _utilities_orders_api__WEBPACK_IMPORTED_MODULE_9__.getCart();
-        setCart(cart);
-      });
-      return _getCart.apply(this, arguments);
+    async function getCart() {
+      const cart = await _utilities_orders_api__WEBPACK_IMPORTED_MODULE_9__.getCart();
+      setCart(cart);
     }
     getCart();
   }, []);
@@ -698,35 +667,17 @@ function NewOrderPage(_ref) {
   // the FIRST render only
 
   /*-- Event Handlers --*/
-  function handleAddToOrder(_x) {
-    return _handleAddToOrder.apply(this, arguments);
+  async function handleAddToOrder(itemId) {
+    const updatedCart = await _utilities_orders_api__WEBPACK_IMPORTED_MODULE_9__.addItemToCart(itemId);
+    setCart(updatedCart);
   }
-  function _handleAddToOrder() {
-    _handleAddToOrder = _asyncToGenerator(function* (itemId) {
-      const updatedCart = yield _utilities_orders_api__WEBPACK_IMPORTED_MODULE_9__.addItemToCart(itemId);
-      setCart(updatedCart);
-    });
-    return _handleAddToOrder.apply(this, arguments);
+  async function handleChangeQty(itemId, newQty) {
+    const updatedCart = await _utilities_orders_api__WEBPACK_IMPORTED_MODULE_9__.setItemQtyInCart(itemId, newQty);
+    setCart(updatedCart);
   }
-  function handleChangeQty(_x2, _x3) {
-    return _handleChangeQty.apply(this, arguments);
-  }
-  function _handleChangeQty() {
-    _handleChangeQty = _asyncToGenerator(function* (itemId, newQty) {
-      const updatedCart = yield _utilities_orders_api__WEBPACK_IMPORTED_MODULE_9__.setItemQtyInCart(itemId, newQty);
-      setCart(updatedCart);
-    });
-    return _handleChangeQty.apply(this, arguments);
-  }
-  function handleCheckout() {
-    return _handleCheckout.apply(this, arguments);
-  }
-  function _handleCheckout() {
-    _handleCheckout = _asyncToGenerator(function* () {
-      yield _utilities_orders_api__WEBPACK_IMPORTED_MODULE_9__.checkout();
-      navigate('/orders');
-    });
-    return _handleCheckout.apply(this, arguments);
+  async function handleCheckout() {
+    await _utilities_orders_api__WEBPACK_IMPORTED_MODULE_9__.checkout();
+    navigate('/orders');
   }
   return /*#__PURE__*/React.createElement("main", {
     className: _NewOrderPage_module_scss__WEBPACK_IMPORTED_MODULE_1__["default"].NewOrderPage
@@ -771,8 +722,6 @@ function NewOrderPage(_ref) {
 /* harmony import */ var _components_OrderList_OrderList__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ../../components/OrderList/OrderList */ "./src/components/OrderList/OrderList.js");
 /* harmony import */ var _components_OrderDetail_OrderDetail__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ../../components/OrderDetail/OrderDetail */ "./src/components/OrderDetail/OrderDetail.js");
 /* provided dependency */ var React = __webpack_require__(/*! react */ "./node_modules/react/index.js");
-function asyncGeneratorStep(gen, resolve, reject, _next, _throw, key, arg) { try { var info = gen[key](arg); var value = info.value; } catch (error) { reject(error); return; } if (info.done) { resolve(value); } else { Promise.resolve(value).then(_next, _throw); } }
-function _asyncToGenerator(fn) { return function () { var self = this, args = arguments; return new Promise(function (resolve, reject) { var gen = fn.apply(self, args); function _next(value) { asyncGeneratorStep(gen, resolve, reject, _next, _throw, "next", value); } function _throw(err) { asyncGeneratorStep(gen, resolve, reject, _next, _throw, "throw", err); } _next(undefined); }); }; }
 
 
 
@@ -793,17 +742,11 @@ function OrderHistoryPage(_ref) {
   /*--- Side Effects --- */
   (0,react__WEBPACK_IMPORTED_MODULE_1__.useEffect)(function () {
     // Load previous orders (paid)
-    function fetchOrderHistory() {
-      return _fetchOrderHistory.apply(this, arguments);
-    }
-    function _fetchOrderHistory() {
-      _fetchOrderHistory = _asyncToGenerator(function* () {
-        const orders = yield _utilities_orders_api__WEBPACK_IMPORTED_MODULE_6__.getOrderHistory();
-        setOrders(orders);
-        // If no orders, activeOrder will be set to null below
-        setActiveOrder(orders[0] || null);
-      });
-      return _fetchOrderHistory.apply(this, arguments);
+    async function fetchOrderHistory() {
+      const orders = await _utilities_orders_api__WEBPACK_IMPORTED_MODULE_6__.getOrderHistory();
+      setOrders(orders);
+      // If no orders, activeOrder will be set to null below
+      setActiveOrder(orders[0] || null);
     }
     fetchOrderHistory();
   }, []);
@@ -1002,43 +945,33 @@ function getOrderHistory() {
 /* harmony export */   "default": () => (/* binding */ sendRequest)
 /* harmony export */ });
 /* harmony import */ var _users_service__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./users-service */ "./src/utilities/users-service.js");
-function asyncGeneratorStep(gen, resolve, reject, _next, _throw, key, arg) { try { var info = gen[key](arg); var value = info.value; } catch (error) { reject(error); return; } if (info.done) { resolve(value); } else { Promise.resolve(value).then(_next, _throw); } }
-function _asyncToGenerator(fn) { return function () { var self = this, args = arguments; return new Promise(function (resolve, reject) { var gen = fn.apply(self, args); function _next(value) { asyncGeneratorStep(gen, resolve, reject, _next, _throw, "next", value); } function _throw(err) { asyncGeneratorStep(gen, resolve, reject, _next, _throw, "throw", err); } _next(undefined); }); }; }
 
-function sendRequest(_x) {
-  return _sendRequest.apply(this, arguments);
-}
-function _sendRequest() {
-  _sendRequest = _asyncToGenerator(function (url) {
-    let method = arguments.length > 1 && arguments[1] !== undefined ? arguments[1] : 'GET';
-    let payload = arguments.length > 2 && arguments[2] !== undefined ? arguments[2] : null;
-    return function* () {
-      // Fetch takes an optional options object as the 2nd argument
-      // used to include a data payload, set headers, etc.
-      const options = {
-        method
-      };
-      if (payload) {
-        options.headers = {
-          'Content-Type': 'application/json'
-        };
-        options.body = JSON.stringify(payload);
-      }
-      const token = (0,_users_service__WEBPACK_IMPORTED_MODULE_0__.getToken)();
-      if (token) {
-        // Ensure headers object exists
-        options.headers = options.headers || {};
-        // Add token to an Authorization header
-        // Prefacing with 'Bearer' is recommended in the HTTP specification
-        options.headers.Authorization = "Bearer ".concat(token);
-      }
-      const res = yield fetch(url, options);
-      // res.ok will be false if the status code set to 4xx in the controller action
-      if (res.ok) return res.json();
-      throw new Error('Bad Request');
-    }();
-  });
-  return _sendRequest.apply(this, arguments);
+async function sendRequest(url) {
+  let method = arguments.length > 1 && arguments[1] !== undefined ? arguments[1] : 'GET';
+  let payload = arguments.length > 2 && arguments[2] !== undefined ? arguments[2] : null;
+  // Fetch takes an optional options object as the 2nd argument
+  // used to include a data payload, set headers, etc.
+  const options = {
+    method
+  };
+  if (payload) {
+    options.headers = {
+      'Content-Type': 'application/json'
+    };
+    options.body = JSON.stringify(payload);
+  }
+  const token = (0,_users_service__WEBPACK_IMPORTED_MODULE_0__.getToken)();
+  if (token) {
+    // Ensure headers object exists
+    options.headers = options.headers || {};
+    // Add token to an Authorization header
+    // Prefacing with 'Bearer' is recommended in the HTTP specification
+    options.headers.Authorization = "Bearer ".concat(token);
+  }
+  const res = await fetch(url, options);
+  // res.ok will be false if the status code set to 4xx in the controller action
+  if (res.ok) return res.json();
+  throw new Error('Bad Request');
 }
 
 /***/ }),
@@ -1079,35 +1012,21 @@ function login(credentials) {
 /* harmony export */   signUp: () => (/* binding */ signUp)
 /* harmony export */ });
 /* harmony import */ var _users_api__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./users-api */ "./src/utilities/users-api.js");
-function asyncGeneratorStep(gen, resolve, reject, _next, _throw, key, arg) { try { var info = gen[key](arg); var value = info.value; } catch (error) { reject(error); return; } if (info.done) { resolve(value); } else { Promise.resolve(value).then(_next, _throw); } }
-function _asyncToGenerator(fn) { return function () { var self = this, args = arguments; return new Promise(function (resolve, reject) { var gen = fn.apply(self, args); function _next(value) { asyncGeneratorStep(gen, resolve, reject, _next, _throw, "next", value); } function _throw(err) { asyncGeneratorStep(gen, resolve, reject, _next, _throw, "throw", err); } _next(undefined); }); }; }
 
-function signUp(_x) {
-  return _signUp.apply(this, arguments);
+async function signUp(userData) {
+  // Delete the network request code to the
+  // users-api.js module which will ultimately
+  // return the JWT
+  const token = await _users_api__WEBPACK_IMPORTED_MODULE_0__.signUp(userData);
+  // Persist the token to localStorage
+  localStorage.setItem('token', token);
+  return getUser();
 }
-function _signUp() {
-  _signUp = _asyncToGenerator(function* (userData) {
-    // Delete the network request code to the
-    // users-api.js module which will ultimately
-    // return the JWT
-    const token = yield _users_api__WEBPACK_IMPORTED_MODULE_0__.signUp(userData);
-    // Persist the token to localStorage
-    localStorage.setItem('token', token);
-    return getUser();
-  });
-  return _signUp.apply(this, arguments);
-}
-function login(_x2) {
-  return _login.apply(this, arguments);
-}
-function _login() {
-  _login = _asyncToGenerator(function* (credentials) {
-    const token = yield _users_api__WEBPACK_IMPORTED_MODULE_0__.login(credentials);
-    // Persist the token to localStorage
-    localStorage.setItem('token', token);
-    return getUser();
-  });
-  return _login.apply(this, arguments);
+async function login(credentials) {
+  const token = await _users_api__WEBPACK_IMPORTED_MODULE_0__.login(credentials);
+  // Persist the token to localStorage
+  localStorage.setItem('token', token);
+  return getUser();
 }
 function getToken() {
   const token = localStorage.getItem('token');
@@ -1526,10 +1445,12 @@ ___CSS_LOADER_EXPORT___.push([module.id, `.cPR75kdAXDGVxib0PszB {
   font-size: 2vmin;
 }
 
-.HJKB5rWmHyYVzHoRvo43 img {
-  width: 100px;
-  height: auto;
-}`, "",{"version":3,"sources":["webpack://./src/components/OrderDetail/OrderDetail.module.scss"],"names":[],"mappings":"AAAA;EACI,sBAAA;EACA,2BAAA;EACA,mBAAA;EACA,cAAA;EACA,gBAAA;EACA,wBAAA;AACJ;;AAEE;EACE,WAAA;AACJ;;AAEE;EACE,iBAAA;EACA,2BAAA;EACA,4BAAA;EACA,WAAA;AACJ;;AAEE;EACE,WAAA;EACA,aAAA;EACA,4CAAA;EACA,gBAAA;EACA,wBAAA;AACJ;;AAEE;EACE,aAAA;EACA,uBAAA;EACA,mBAAA;EACA,gBAAA;EACA,uBAAA;AACJ;;AAEE;EACE,aAAA;EACA,uBAAA;EACA,iBAAA;EACA,eAAA;EACA,uBAAA;EACA,kDAAA;EACA,mBAAA;EACA,YAAA;EACA,0BAAA;AACJ;;AAEE;EACE,uBAAA;EACA,wCAAA;EACA,iBAAA;AACJ;;AAEE;EACE,aAAA;EACA,yBAAA;AACJ;;AAEE;EACE,kBAAA;EACA,SAAA;EACA,gBAAA;AACJ;;AAEE;EACE,YAAA;EACA,YAAA;AACJ","sourcesContent":[".OrderDetail {\n    flex-direction: column;\n    justify-content: flex-start;\n    align-items: center;\n    padding: 3vmin;\n    font-size: 2vmin;\n    color: var(--text-light);\n  }\n  \n  .OrderDetail .sectionHeading {\n    width: 100%\n  }\n  \n  .OrderDetail .lineItemContainer {\n    margin-top: 3vmin;\n    justify-content: flex-start;\n    height: calc(100vh - 18vmin);\n    width: 100%;\n  }\n  \n  .OrderDetail .total {\n    width: 100%;\n    display: grid;\n    grid-template-columns: 18.35vw 5.75vw 5.25vw;\n    padding: 1vmin 0;\n    color: var(--text-light);\n  }\n  \n  .OrderDetail .total span {\n    display: flex;\n    justify-content: center;\n    align-items: center;\n    font-size: 1.5vw;\n    color: var(--text-dark);\n  }\n\n  .OrderDetail .total button {\n    display: flex;\n    justify-content: center;\n    align-items: left;\n    font-size: 1rem;\n    color: var(--text-dark);\n    transition: background-color 0.3s, box-shadow 0.3s;\n    margin-left: -.10px;\n    color:black;\n    border: .1rem solid black;\n  }\n  \n  .OrderDetail .total button:hover {\n    background-color: black;\n    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);\n    color: whitesmoke;\n  }\n  \n  .OrderDetail .total span.right {\n    display: flex;\n    justify-content: flex-end;\n  }\n  \n  .OrderDetail .hungry {\n    position: absolute;\n    top: 50vh;\n    font-size: 2vmin;\n  }\n\n  .flex-ctr-ctr img {\n    width: 100px;\n    height: auto;\n  }\n"],"sourceRoot":""}]);
+.vVkqXbRqxMYDCnUttflb img {
+  width: 75%;
+  height: 55%;
+  -o-object-fit: contain;
+  object-fit: contain;
+}`, "",{"version":3,"sources":["webpack://./src/components/OrderDetail/OrderDetail.module.scss"],"names":[],"mappings":"AAAA;EACI,sBAAA;EACA,2BAAA;EACA,mBAAA;EACA,cAAA;EACA,gBAAA;EACA,wBAAA;AACJ;;AAEE;EACE,WAAA;AACJ;;AAEE;EACE,iBAAA;EACA,2BAAA;EACA,4BAAA;EACA,WAAA;AACJ;;AAEE;EACE,WAAA;EACA,aAAA;EACA,4CAAA;EACA,gBAAA;EACA,wBAAA;AACJ;;AAEE;EACE,aAAA;EACA,uBAAA;EACA,mBAAA;EACA,gBAAA;EACA,uBAAA;AACJ;;AAEE;EACE,aAAA;EACA,uBAAA;EACA,iBAAA;EACA,eAAA;EACA,uBAAA;EACA,kDAAA;EACA,mBAAA;EACA,YAAA;EACA,0BAAA;AACJ;;AAEE;EACE,uBAAA;EACA,wCAAA;EACA,iBAAA;AACJ;;AAEE;EACE,aAAA;EACA,yBAAA;AACJ;;AAEE;EACE,kBAAA;EACA,SAAA;EACA,gBAAA;AACJ;;AAEA;EACI,UAAA;EACA,WAAA;EACA,sBAAA;EACG,mBAAA;AACP","sourcesContent":[".OrderDetail {\n    flex-direction: column;\n    justify-content: flex-start;\n    align-items: center;\n    padding: 3vmin;\n    font-size: 2vmin;\n    color: var(--text-light);\n  }\n  \n  .OrderDetail .sectionHeading {\n    width: 100%\n  }\n  \n  .OrderDetail .lineItemContainer {\n    margin-top: 3vmin;\n    justify-content: flex-start;\n    height: calc(100vh - 18vmin);\n    width: 100%;\n  }\n  \n  .OrderDetail .total {\n    width: 100%;\n    display: grid;\n    grid-template-columns: 18.35vw 5.75vw 5.25vw;\n    padding: 1vmin 0;\n    color: var(--text-light);\n  }\n  \n  .OrderDetail .total span {\n    display: flex;\n    justify-content: center;\n    align-items: center;\n    font-size: 1.5vw;\n    color: var(--text-dark);\n  }\n\n  .OrderDetail .total button {\n    display: flex;\n    justify-content: center;\n    align-items: left;\n    font-size: 1rem;\n    color: var(--text-dark);\n    transition: background-color 0.3s, box-shadow 0.3s;\n    margin-left: -.10px;\n    color:black;\n    border: .1rem solid black;\n  }\n  \n  .OrderDetail .total button:hover {\n    background-color: black;\n    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);\n    color: whitesmoke;\n  }\n  \n  .OrderDetail .total span.right {\n    display: flex;\n    justify-content: flex-end;\n  }\n  \n  .OrderDetail .hungry {\n    position: absolute;\n    top: 50vh;\n    font-size: 2vmin;\n  }\n\n.lineItemContainer img {\n    width: 75%;\n    height: 55%;\n    -o-object-fit: contain;\n       object-fit: contain;\n}\n"],"sourceRoot":""}]);
 // Exports
 ___CSS_LOADER_EXPORT___.locals = {
 	"OrderDetail": `cPR75kdAXDGVxib0PszB`,
@@ -1537,8 +1458,7 @@ ___CSS_LOADER_EXPORT___.locals = {
 	"lineItemContainer": `vVkqXbRqxMYDCnUttflb`,
 	"total": `V5OAbv7QFHo6WglNx0m0`,
 	"right": `GtULiQQdndLNSQN4Yc97`,
-	"hungry": `dyrUhYTujwEUiMzpjxWX`,
-	"flex-ctr-ctr": `HJKB5rWmHyYVzHoRvo43`
+	"hungry": `dyrUhYTujwEUiMzpjxWX`
 };
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (___CSS_LOADER_EXPORT___);
 
@@ -1713,14 +1633,26 @@ ___CSS_LOADER_EXPORT___.push([module.id, `.RygkJgZmBHTETlLP3C3i {
   align-items: center;
   background-color: var(--white);
   border-radius: 2vmin;
+  margin-top: 325px;
 }
 
 .RygkJgZmBHTETlLP3C3i h3 {
-  margin-top: 4vmin;
-  text-align: center;
-  color: var(--text-light);
+  color: black;
+  padding: 2px;
+  transition: background-color 0.3s, box-shadow 0.3s;
+  border: 0.1rem solid black;
+  border-radius: 0.5vmin;
   cursor: pointer;
-}`, "",{"version":3,"sources":["webpack://./src/pages/AuthPage/AuthPage.module.scss"],"names":[],"mappings":"AAAA;EACI,YAAA;EACA,WAAA;EACA,aAAA;EACA,6BAAA;EACA,mBAAA;EACA,8BAAA;EACA,oBAAA;AACJ;;AAEE;EACE,iBAAA;EACA,kBAAA;EACA,wBAAA;EACA,eAAA;AACJ","sourcesContent":[".AuthPage {\n    height: 100%;\n    width: 100%;\n    display: flex;\n    justify-content: space-evenly;\n    align-items: center;\n    background-color: var(--white);\n    border-radius: 2vmin;\n  }\n  \n  .AuthPage h3 {\n    margin-top: 4vmin;\n    text-align: center;\n    color: var(--text-light);\n    cursor: pointer;\n  }\n\n\n  "],"sourceRoot":""}]);
+  font-size: 30px;
+  margin-right: 90px;
+  background-color: var(--sky-blue);
+}
+
+.RygkJgZmBHTETlLP3C3i h3:hover {
+  background-color: black;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  color: var(--sky-blue);
+}`, "",{"version":3,"sources":["webpack://./src/pages/AuthPage/AuthPage.module.scss"],"names":[],"mappings":"AAAA;EACI,YAAA;EACA,WAAA;EACA,aAAA;EACA,6BAAA;EACA,mBAAA;EACA,8BAAA;EACA,oBAAA;EACA,iBAAA;AACJ;;AAEE;EACE,YAAA;EACA,YAAA;EACA,kDAAA;EACA,0BAAA;EACA,sBAAA;EACA,eAAA;EACA,eAAA;EACA,kBAAA;EACA,iCAAA;AACJ;;AAEE;EACE,uBAAA;EACA,wCAAA;EACA,sBAAA;AACJ","sourcesContent":[".AuthPage {\n    height: 100%;\n    width: 100%;\n    display: flex;\n    justify-content: space-evenly;\n    align-items: center;\n    background-color: var(--white);\n    border-radius: 2vmin;\n    margin-top: 325px;\n  }\n  \n  .AuthPage h3 {\n    color: black;\n    padding: 2px;\n    transition: background-color 0.3s, box-shadow 0.3s;\n    border: .1rem solid black;\n    border-radius: .5vmin;\n    cursor: pointer;\n    font-size: 30px;\n    margin-right: 90px;\n    background-color: var(--sky-blue);\n  }\n  \n  .AuthPage h3:hover {\n    background-color: black;\n    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);\n    color: var(--sky-blue);\n  }\n\n\n  "],"sourceRoot":""}]);
 // Exports
 ___CSS_LOADER_EXPORT___.locals = {
 	"AuthPage": `RygkJgZmBHTETlLP3C3i`
