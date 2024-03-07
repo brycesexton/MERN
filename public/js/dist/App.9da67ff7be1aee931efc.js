@@ -1838,7 +1838,8 @@ ___CSS_LOADER_EXPORT___.push([module.id, `.U7F51i6q23MB43wS4GeC {
   cursor: pointer;
   text-align: center;
   width: 90px;
-  margin-top: 500px;
+  margin-top: 550px;
+  margin-bottom: 15px;
   font-size: 1rem;
 }
 
@@ -1850,7 +1851,7 @@ ___CSS_LOADER_EXPORT___.push([module.id, `.U7F51i6q23MB43wS4GeC {
 
 .U7F51i6q23MB43wS4GeC .bdJgIqaIXsYnwqx4qGnF {
   width: 100%;
-}`, "",{"version":3,"sources":["webpack://./src/pages/OrderHistoryPage/OrderHistoryPage.module.scss"],"names":[],"mappings":"AAAA;EACI,YAAA;EACA,aAAA;EACA,sCAAA;EACA,uBAAA;EACA,8BAAA;EACA,oBAAA;AACJ;;AAEE;EACE,aAAA;EACA,sBAAA;EACA,8BAAA;EACA,iBAAA;EACA,mBAAA;AACJ;;AAEE;EACE,qBAAA;EACA,YAAA;EACA,kDAAA;EACA,0BAAA;EACA,sBAAA;EACA,YAAA;EACA,eAAA;EACA,kBAAA;EACA,WAAA;EACA,iBAAA;EACA,eAAA;AACJ;;AAEE;EACE,uBAAA;EACA,wCAAA;EACA,sBAAA;AACJ;;AAEE;EACE,WAAA;AACJ","sourcesContent":[".OrderHistoryPage {\n    height: 100%;\n    display: grid;\n    grid-template-columns: 1.6fr 3.5fr 3fr;\n    grid-template-rows: 1fr;\n    background-color: var(--white);\n    border-radius: 2vmin;\n}\n  \n  .OrderHistoryPage .aside {\n    display: flex;\n    flex-direction: column;\n    justify-content: space-between;\n    align-items: left;\n    margin: 3vmin 2vmin;\n  }\n\n  .OrderHistoryPage .button {\n    text-decoration: none;\n    color:black;\n    transition: background-color 0.3s, box-shadow 0.3s;\n    border: .1rem solid black;\n    border-radius: .5vmin;\n    padding: 2px;\n    cursor: pointer;\n    text-align: center;\n    width: 90px;\n    margin-top: 500px;\n    font-size: 1rem;\n  }\n\n  .OrderHistoryPage .button:hover {\n    background-color: black;\n    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);\n    color: var(--sky-blue);\n  }\n\n  .OrderHistoryPage .logo {\n    width: 100%;\n  }\n"],"sourceRoot":""}]);
+}`, "",{"version":3,"sources":["webpack://./src/pages/OrderHistoryPage/OrderHistoryPage.module.scss"],"names":[],"mappings":"AAAA;EACI,YAAA;EACA,aAAA;EACA,sCAAA;EACA,uBAAA;EACA,8BAAA;EACA,oBAAA;AACJ;;AAEE;EACE,aAAA;EACA,sBAAA;EACA,8BAAA;EACA,iBAAA;EACA,mBAAA;AACJ;;AAEE;EACE,qBAAA;EACA,YAAA;EACA,kDAAA;EACA,0BAAA;EACA,sBAAA;EACA,YAAA;EACA,eAAA;EACA,kBAAA;EACA,WAAA;EACA,iBAAA;EACA,mBAAA;EACA,eAAA;AACJ;;AAEE;EACE,uBAAA;EACA,wCAAA;EACA,sBAAA;AACJ;;AAEE;EACE,WAAA;AACJ","sourcesContent":[".OrderHistoryPage {\n    height: 100%;\n    display: grid;\n    grid-template-columns: 1.6fr 3.5fr 3fr;\n    grid-template-rows: 1fr;\n    background-color: var(--white);\n    border-radius: 2vmin;\n}\n  \n  .OrderHistoryPage .aside {\n    display: flex;\n    flex-direction: column;\n    justify-content: space-between;\n    align-items: left;\n    margin: 3vmin 2vmin;\n  }\n\n  .OrderHistoryPage .button {\n    text-decoration: none;\n    color:black;\n    transition: background-color 0.3s, box-shadow 0.3s;\n    border: .1rem solid black;\n    border-radius: .5vmin;\n    padding: 2px;\n    cursor: pointer;\n    text-align: center;\n    width: 90px;\n    margin-top: 550px;\n    margin-bottom: 15px;\n    font-size: 1rem;\n  }\n\n  .OrderHistoryPage .button:hover {\n    background-color: black;\n    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);\n    color: var(--sky-blue);\n  }\n\n  .OrderHistoryPage .logo {\n    width: 100%;\n  }\n"],"sourceRoot":""}]);
 // Exports
 ___CSS_LOADER_EXPORT___.locals = {
 	"OrderHistoryPage": `U7F51i6q23MB43wS4GeC`,
