@@ -2,15 +2,18 @@
     font-size: 1.5vmin;
     color: var(--text-light);
     text-align: left;
+    margin-left: -10px;
     }
     
     .UserLogOut .email {
       font-size: smaller;
+      margin-left: 10px;
     }
 
     .UserLogOut .button {
       border: .1rem solid black;
       transition: background-color 0.1s, box-shadow 0.1s;
+      padding: 0%;
     }
 
     .UserLogOut button:hover {

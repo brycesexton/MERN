@@ -11,6 +11,27 @@
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    align-items: center;
+    align-items: left;
     margin: 3vmin 2vmin;
+  }
+  .NewOrderPage .logo {
+    width: 100%;
+  }
+
+  .NewOrderPage .button {
+    text-decoration: none;
+    color:black;
+    transition: background-color 0.3s, box-shadow 0.3s;
+    border: .1rem solid black;
+    border-radius: .5vmin;
+    padding: 2px;
+    cursor: pointer;
+    text-align: center;
+    width: 90px;
+  }
+
+  .NewOrderPage .button:hover {
+    background-color: black;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    color: var(--sky-blue);
   }

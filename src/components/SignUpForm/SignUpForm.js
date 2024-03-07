@@ -1,5 +1,6 @@
 import { Component } from "react";
 import { signUp } from '../../utilities/users-service';
+import styles from './SignUpForm.module.scss';
 
 export default class SignUpForm extends Component {
 state = {
@@ -41,8 +42,8 @@ handleSubmit = async (evt) => {
 render() {
   const disable = this.state.password !== this.state.confirm;
   return (
-    <div>
-      <h3>Join the Shred Cafe family and gain access to exclusive member benefits!</h3>
+    <div className={styles.mainContainerSignUp}>
+      <h3 className={styles.textBar}>Join the Shred Cafe family and gain access to exclusive member benefits!</h3>
       <div className="form-container">
         <form autoComplete="off" onSubmit={this.handleSubmit}>
           <label>Name</label>

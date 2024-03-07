@@ -56,14 +56,14 @@ export default function NewOrderPage({ user, setUser }) {
   return (
     <main className={styles.NewOrderPage}>
       <aside>
-        <Logo />
+        <Logo className={styles.logo}/>
         <CategoryList
           categories={categoriesRef.current}
           cart={setCart}
           setActiveCat={setActiveCat}
         />
-        <Link to="/orders" className="button btn-sm">ORDER HISTORY</Link>
-        <UserLogOut user={user} setUser={setUser} />
+        <Link to="/orders" className={styles.button}>ORDER HISTORY</Link>
+        <UserLogOut className={styles.logout} user={user} setUser={setUser} />
       </aside>
       <MenuList
         menuItems={menuItems.filter(item => item.category.name === activeCat)}
