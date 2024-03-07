@@ -1,8 +1,14 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Oswald:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+
 .UserLogOut {
     font-size: 1.5vmin;
     color: var(--text-light);
     text-align: left;
     margin-left: -10px;
+    font-family: "Bebas Neue", sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
     }
     
     .UserLogOut .email {

@@ -1223,8 +1223,8 @@ ___CSS_LOADER_EXPORT___.push([module.id, `.EDeinQzfS2N2rVW_Z1GP {
   font-weight: 700;
   font-size: 5.5vmin;
   text-shadow: 2px 2px 4px rgba(116, 111, 111, 0.5);
-  margin-left: -4rem;
-}`, "",{"version":3,"sources":["webpack://./src/components/Logo/Logo.module.scss"],"names":[],"mappings":"AAAA;EACE,aAAA;EACA,sBAAA;EACA,mBAAA;EACA,gBAAA;EACA,QAAA;EACA,SAAA;EACA,YAAA;EACA,WAAA;AACF;;AAEA;EACE,YAAA;EACA,oBAAA;EACA,oBAAA;AACF;;AAEA;EACE,aAAA;EACA,sBAAA;EACA,iBAAA;EACA,YAAA;EACA,gBAAA;EACA,kBAAA;EACA,iDAAA;EACA,kBAAA;AACF","sourcesContent":[".Logo {\n  display: flex;\n  flex-direction: column;\n  align-items: center; \n  text-align: left; \n  top: 10%;\n  left: 10%;\n  height: 20vh;\n  width: 100%;\n}\n\n.Logo img {\n  width: 5vmin; \n  margin-bottom: 2vmin; \n  margin-left: -7.5rem;\n}\n\n.MainContainer {\n  display: flex;\n  flex-direction: column;\n  align-items: left; \n  color: black;\n  font-weight: 700;\n  font-size: 5.5vmin;\n  text-shadow: 2px 2px 4px rgba(116, 111, 111, 0.5);\n  margin-left: -4rem;\n}"],"sourceRoot":""}]);
+  margin-left: -11rem;
+}`, "",{"version":3,"sources":["webpack://./src/components/Logo/Logo.module.scss"],"names":[],"mappings":"AAAA;EACE,aAAA;EACA,sBAAA;EACA,mBAAA;EACA,gBAAA;EACA,QAAA;EACA,SAAA;EACA,YAAA;EACA,WAAA;AACF;;AAEA;EACE,YAAA;EACA,oBAAA;EACA,oBAAA;AACF;;AAEA;EACE,aAAA;EACA,sBAAA;EACA,iBAAA;EACA,YAAA;EACA,gBAAA;EACA,kBAAA;EACA,iDAAA;EACA,mBAAA;AACF","sourcesContent":[".Logo {\n  display: flex;\n  flex-direction: column;\n  align-items: center; \n  text-align: left; \n  top: 10%;\n  left: 10%;\n  height: 20vh;\n  width: 100%;\n}\n\n.Logo img {\n  width: 5vmin; \n  margin-bottom: 2vmin; \n  margin-left: -7.5rem;\n}\n\n.MainContainer {\n  display: flex;\n  flex-direction: column;\n  align-items: left; \n  color: black;\n  font-weight: 700;\n  font-size: 5.5vmin;\n  text-shadow: 2px 2px 4px rgba(116, 111, 111, 0.5);\n  margin-left: -11rem;\n}"],"sourceRoot":""}]);
 // Exports
 ___CSS_LOADER_EXPORT___.locals = {
 	"Logo": `EDeinQzfS2N2rVW_Z1GP`,
@@ -1630,12 +1630,17 @@ ___CSS_LOADER_EXPORT___.locals = {
 
 
 var ___CSS_LOADER_EXPORT___ = _node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_1___default()((_node_modules_css_loader_dist_runtime_sourceMaps_js__WEBPACK_IMPORTED_MODULE_0___default()));
+___CSS_LOADER_EXPORT___.push([module.id, "@import url(https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Oswald:wght@400;700&display=swap);"]);
+___CSS_LOADER_EXPORT___.push([module.id, "@import url(https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap);"]);
 // Module
 ___CSS_LOADER_EXPORT___.push([module.id, `.x80Y_LltA5PliUAZlphe {
   font-size: 1.5vmin;
   color: var(--text-light);
   text-align: left;
   margin-left: -10px;
+  font-family: "Bebas Neue", sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
 }
 
 .x80Y_LltA5PliUAZlphe .qHiYGQB1ZEMvrGOQoBrO {
@@ -1653,7 +1658,7 @@ ___CSS_LOADER_EXPORT___.push([module.id, `.x80Y_LltA5PliUAZlphe {
   background-color: black;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
   color: whitesmoke;
-}`, "",{"version":3,"sources":["webpack://./src/components/UserLogOut/UserLogOut.module.scss"],"names":[],"mappings":"AAAA;EACI,kBAAA;EACA,wBAAA;EACA,gBAAA;EACA,kBAAA;AACJ;;AAEI;EACE,kBAAA;EACA,iBAAA;AACN;;AAEI;EACE,0BAAA;EACA,kDAAA;EACA,WAAA;AACN;;AAEI;EACI,uBAAA;EACA,wCAAA;EACA,iBAAA;AACR","sourcesContent":[".UserLogOut {\n    font-size: 1.5vmin;\n    color: var(--text-light);\n    text-align: left;\n    margin-left: -10px;\n    }\n    \n    .UserLogOut .email {\n      font-size: smaller;\n      margin-left: 10px;\n    }\n\n    .UserLogOut .button {\n      border: .1rem solid black;\n      transition: background-color 0.1s, box-shadow 0.1s;\n      padding: 0%;\n    }\n\n    .UserLogOut button:hover {\n        background-color: black;\n        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);\n        color: whitesmoke;\n    }\n    "],"sourceRoot":""}]);
+}`, "",{"version":3,"sources":["webpack://./src/components/UserLogOut/UserLogOut.module.scss"],"names":[],"mappings":"AAGA;EACI,kBAAA;EACA,wBAAA;EACA,gBAAA;EACA,kBAAA;EACA,qCAAA;EACA,mCAAA;EACA,kCAAA;AAAJ;;AAGI;EACE,kBAAA;EACA,iBAAA;AAAN;;AAGI;EACE,0BAAA;EACA,kDAAA;EACA,WAAA;AAAN;;AAGI;EACI,uBAAA;EACA,wCAAA;EACA,iBAAA;AAAR","sourcesContent":["@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Oswald:wght@400;700&display=swap');\n@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');\n\n.UserLogOut {\n    font-size: 1.5vmin;\n    color: var(--text-light);\n    text-align: left;\n    margin-left: -10px;\n    font-family: \"Bebas Neue\", sans-serif;\n    -webkit-font-smoothing: antialiased;\n    -moz-osx-font-smoothing: grayscale;\n    }\n    \n    .UserLogOut .email {\n      font-size: smaller;\n      margin-left: 10px;\n    }\n\n    .UserLogOut .button {\n      border: .1rem solid black;\n      transition: background-color 0.1s, box-shadow 0.1s;\n      padding: 0%;\n    }\n\n    .UserLogOut button:hover {\n        background-color: black;\n        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);\n        color: whitesmoke;\n    }\n    "],"sourceRoot":""}]);
 // Exports
 ___CSS_LOADER_EXPORT___.locals = {
 	"UserLogOut": `x80Y_LltA5PliUAZlphe`,
@@ -1769,13 +1774,14 @@ ___CSS_LOADER_EXPORT___.push([module.id, `.RZqTJBeYN7RXwcHgPFys {
   cursor: pointer;
   text-align: center;
   width: 90px;
+  margin-top: 100px;
 }
 
 .RZqTJBeYN7RXwcHgPFys .DAiNys0uBRekyg44wrty:hover {
   background-color: black;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
   color: var(--sky-blue);
-}`, "",{"version":3,"sources":["webpack://./src/pages/NewOrderPage/NewOrderPage.module.scss"],"names":[],"mappings":"AAAA;EACI,YAAA;EACA,aAAA;EACA,sCAAA;EACA,uBAAA;EACA,8BAAA;EACA,oBAAA;AACJ;;AAEE;EACE,aAAA;EACA,sBAAA;EACA,8BAAA;EACA,iBAAA;EACA,mBAAA;AACJ;;AACE;EACE,WAAA;AAEJ;;AACE;EACE,qBAAA;EACA,YAAA;EACA,kDAAA;EACA,0BAAA;EACA,sBAAA;EACA,YAAA;EACA,eAAA;EACA,kBAAA;EACA,WAAA;AAEJ;;AACE;EACE,uBAAA;EACA,wCAAA;EACA,sBAAA;AAEJ","sourcesContent":[".NewOrderPage {\n    height: 100%;\n    display: grid;\n    grid-template-columns: 1.6fr 3.5fr 3fr;\n    grid-template-rows: 1fr;\n    background-color: var(--white);\n    border-radius: 2vmin;\n  }\n  \n  .NewOrderPage aside {\n    display: flex;\n    flex-direction: column;\n    justify-content: space-between;\n    align-items: left;\n    margin: 3vmin 2vmin;\n  }\n  .NewOrderPage .logo {\n    width: 100%;\n  }\n\n  .NewOrderPage .button {\n    text-decoration: none;\n    color:black;\n    transition: background-color 0.3s, box-shadow 0.3s;\n    border: .1rem solid black;\n    border-radius: .5vmin;\n    padding: 2px;\n    cursor: pointer;\n    text-align: center;\n    width: 90px;\n  }\n\n  .NewOrderPage .button:hover {\n    background-color: black;\n    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);\n    color: var(--sky-blue);\n  }"],"sourceRoot":""}]);
+}`, "",{"version":3,"sources":["webpack://./src/pages/NewOrderPage/NewOrderPage.module.scss"],"names":[],"mappings":"AAAA;EACI,YAAA;EACA,aAAA;EACA,sCAAA;EACA,uBAAA;EACA,8BAAA;EACA,oBAAA;AACJ;;AAEE;EACE,aAAA;EACA,sBAAA;EACA,8BAAA;EACA,iBAAA;EACA,mBAAA;AACJ;;AACE;EACE,WAAA;AAEJ;;AACE;EACE,qBAAA;EACA,YAAA;EACA,kDAAA;EACA,0BAAA;EACA,sBAAA;EACA,YAAA;EACA,eAAA;EACA,kBAAA;EACA,WAAA;EACA,iBAAA;AAEJ;;AACE;EACE,uBAAA;EACA,wCAAA;EACA,sBAAA;AAEJ","sourcesContent":[".NewOrderPage {\n    height: 100%;\n    display: grid;\n    grid-template-columns: 1.6fr 3.5fr 3fr;\n    grid-template-rows: 1fr;\n    background-color: var(--white);\n    border-radius: 2vmin;\n  }\n  \n  .NewOrderPage aside {\n    display: flex;\n    flex-direction: column;\n    justify-content: space-between;\n    align-items: left;\n    margin: 3vmin 2vmin;\n  }\n  .NewOrderPage .logo {\n    width: 100%;\n  }\n\n  .NewOrderPage .button {\n    text-decoration: none;\n    color:black;\n    transition: background-color 0.3s, box-shadow 0.3s;\n    border: .1rem solid black;\n    border-radius: .5vmin;\n    padding: 2px;\n    cursor: pointer;\n    text-align: center;\n    width: 90px;\n    margin-top: 100px;\n  }\n\n  .NewOrderPage .button:hover {\n    background-color: black;\n    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);\n    color: var(--sky-blue);\n  }"],"sourceRoot":""}]);
 // Exports
 ___CSS_LOADER_EXPORT___.locals = {
 	"NewOrderPage": `RZqTJBeYN7RXwcHgPFys`,
@@ -1830,6 +1836,10 @@ ___CSS_LOADER_EXPORT___.push([module.id, `.U7F51i6q23MB43wS4GeC {
   border-radius: 0.5vmin;
   padding: 2px;
   cursor: pointer;
+  text-align: center;
+  width: 90px;
+  margin-top: 500px;
+  font-size: 1rem;
 }
 
 .U7F51i6q23MB43wS4GeC .L6GkoBeti2qTCCu4eYSl:hover {
@@ -1840,7 +1850,7 @@ ___CSS_LOADER_EXPORT___.push([module.id, `.U7F51i6q23MB43wS4GeC {
 
 .U7F51i6q23MB43wS4GeC .bdJgIqaIXsYnwqx4qGnF {
   width: 100%;
-}`, "",{"version":3,"sources":["webpack://./src/pages/OrderHistoryPage/OrderHistoryPage.module.scss"],"names":[],"mappings":"AAAA;EACI,YAAA;EACA,aAAA;EACA,sCAAA;EACA,uBAAA;EACA,8BAAA;EACA,oBAAA;AACJ;;AAEE;EACE,aAAA;EACA,sBAAA;EACA,8BAAA;EACA,iBAAA;EACA,mBAAA;AACJ;;AAEE;EACE,qBAAA;EACA,YAAA;EACA,kDAAA;EACA,0BAAA;EACA,sBAAA;EACA,YAAA;EACA,eAAA;AACJ;;AAEE;EACE,uBAAA;EACA,wCAAA;EACA,sBAAA;AACJ;;AAEE;EACE,WAAA;AACJ","sourcesContent":[".OrderHistoryPage {\n    height: 100%;\n    display: grid;\n    grid-template-columns: 1.6fr 3.5fr 3fr;\n    grid-template-rows: 1fr;\n    background-color: var(--white);\n    border-radius: 2vmin;\n}\n  \n  .OrderHistoryPage .aside {\n    display: flex;\n    flex-direction: column;\n    justify-content: space-between;\n    align-items: left;\n    margin: 3vmin 2vmin;\n  }\n\n  .OrderHistoryPage .button {\n    text-decoration: none;\n    color:black;\n    transition: background-color 0.3s, box-shadow 0.3s;\n    border: .1rem solid black;\n    border-radius: .5vmin;\n    padding: 2px;\n    cursor: pointer;\n  }\n\n  .OrderHistoryPage .button:hover {\n    background-color: black;\n    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);\n    color: var(--sky-blue);\n  }\n\n  .OrderHistoryPage .logo {\n    width: 100%;\n  }\n"],"sourceRoot":""}]);
+}`, "",{"version":3,"sources":["webpack://./src/pages/OrderHistoryPage/OrderHistoryPage.module.scss"],"names":[],"mappings":"AAAA;EACI,YAAA;EACA,aAAA;EACA,sCAAA;EACA,uBAAA;EACA,8BAAA;EACA,oBAAA;AACJ;;AAEE;EACE,aAAA;EACA,sBAAA;EACA,8BAAA;EACA,iBAAA;EACA,mBAAA;AACJ;;AAEE;EACE,qBAAA;EACA,YAAA;EACA,kDAAA;EACA,0BAAA;EACA,sBAAA;EACA,YAAA;EACA,eAAA;EACA,kBAAA;EACA,WAAA;EACA,iBAAA;EACA,eAAA;AACJ;;AAEE;EACE,uBAAA;EACA,wCAAA;EACA,sBAAA;AACJ;;AAEE;EACE,WAAA;AACJ","sourcesContent":[".OrderHistoryPage {\n    height: 100%;\n    display: grid;\n    grid-template-columns: 1.6fr 3.5fr 3fr;\n    grid-template-rows: 1fr;\n    background-color: var(--white);\n    border-radius: 2vmin;\n}\n  \n  .OrderHistoryPage .aside {\n    display: flex;\n    flex-direction: column;\n    justify-content: space-between;\n    align-items: left;\n    margin: 3vmin 2vmin;\n  }\n\n  .OrderHistoryPage .button {\n    text-decoration: none;\n    color:black;\n    transition: background-color 0.3s, box-shadow 0.3s;\n    border: .1rem solid black;\n    border-radius: .5vmin;\n    padding: 2px;\n    cursor: pointer;\n    text-align: center;\n    width: 90px;\n    margin-top: 500px;\n    font-size: 1rem;\n  }\n\n  .OrderHistoryPage .button:hover {\n    background-color: black;\n    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);\n    color: var(--sky-blue);\n  }\n\n  .OrderHistoryPage .logo {\n    width: 100%;\n  }\n"],"sourceRoot":""}]);
 // Exports
 ___CSS_LOADER_EXPORT___.locals = {
 	"OrderHistoryPage": `U7F51i6q23MB43wS4GeC`,
