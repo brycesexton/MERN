@@ -597,7 +597,7 @@ function AuthPage(_ref) {
   return /*#__PURE__*/React.createElement("main", {
     className: _AuthPage_module_scss__WEBPACK_IMPORTED_MODULE_1__["default"].AuthPage
   }, /*#__PURE__*/React.createElement("div", null, /*#__PURE__*/React.createElement(_components_Logo_Logo__WEBPACK_IMPORTED_MODULE_4__["default"], {
-    className: _AuthPage_module_scss__WEBPACK_IMPORTED_MODULE_1__["default"].Logo
+    className: _AuthPage_module_scss__WEBPACK_IMPORTED_MODULE_1__["default"].logo
   }), /*#__PURE__*/React.createElement("h3", {
     onClick: () => setShowLogin(!showLogin)
   }, showLogin ? 'SIGN UP' : 'LOG IN')), showLogin ? /*#__PURE__*/React.createElement(_components_LoginForm_LoginForm__WEBPACK_IMPORTED_MODULE_2__["default"], {
@@ -1699,6 +1699,10 @@ ___CSS_LOADER_EXPORT___.push([module.id, `.RygkJgZmBHTETlLP3C3i {
   margin-top: 325px;
 }
 
+.RygkJgZmBHTETlLP3C3i .CK5eNrxOxrUlH8arKKKJ {
+  margin-left: 40px;
+}
+
 .RygkJgZmBHTETlLP3C3i h3 {
   color: black;
   padding: 2px;
@@ -1707,7 +1711,7 @@ ___CSS_LOADER_EXPORT___.push([module.id, `.RygkJgZmBHTETlLP3C3i {
   border-radius: 0.5vmin;
   cursor: pointer;
   font-size: 30px;
-  margin-right: 90px;
+  margin-right: 200px;
   background-color: var(--sky-blue);
 }
 
@@ -1715,10 +1719,11 @@ ___CSS_LOADER_EXPORT___.push([module.id, `.RygkJgZmBHTETlLP3C3i {
   background-color: black;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
   color: var(--sky-blue);
-}`, "",{"version":3,"sources":["webpack://./src/pages/AuthPage/AuthPage.module.scss"],"names":[],"mappings":"AAAA;EACI,YAAA;EACA,WAAA;EACA,aAAA;EACA,6BAAA;EACA,mBAAA;EACA,8BAAA;EACA,oBAAA;EACA,iBAAA;AACJ;;AAEE;EACE,YAAA;EACA,YAAA;EACA,kDAAA;EACA,0BAAA;EACA,sBAAA;EACA,eAAA;EACA,eAAA;EACA,kBAAA;EACA,iCAAA;AACJ;;AAEE;EACE,uBAAA;EACA,wCAAA;EACA,sBAAA;AACJ","sourcesContent":[".AuthPage {\n    height: 100%;\n    width: 100%;\n    display: flex;\n    justify-content: space-evenly;\n    align-items: center;\n    background-color: var(--white);\n    border-radius: 2vmin;\n    margin-top: 325px;\n  }\n  \n  .AuthPage h3 {\n    color: black;\n    padding: 2px;\n    transition: background-color 0.3s, box-shadow 0.3s;\n    border: .1rem solid black;\n    border-radius: .5vmin;\n    cursor: pointer;\n    font-size: 30px;\n    margin-right: 90px;\n    background-color: var(--sky-blue);\n  }\n  \n  .AuthPage h3:hover {\n    background-color: black;\n    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);\n    color: var(--sky-blue);\n  }\n\n\n  "],"sourceRoot":""}]);
+}`, "",{"version":3,"sources":["webpack://./src/pages/AuthPage/AuthPage.module.scss"],"names":[],"mappings":"AAAA;EACI,YAAA;EACA,WAAA;EACA,aAAA;EACA,6BAAA;EACA,mBAAA;EACA,8BAAA;EACA,oBAAA;EACA,iBAAA;AACJ;;AAGE;EACE,iBAAA;AAAJ;;AAGE;EACE,YAAA;EACA,YAAA;EACA,kDAAA;EACA,0BAAA;EACA,sBAAA;EACA,eAAA;EACA,eAAA;EACA,mBAAA;EACA,iCAAA;AAAJ;;AAGE;EACE,uBAAA;EACA,wCAAA;EACA,sBAAA;AAAJ","sourcesContent":[".AuthPage {\n    height: 100%;\n    width: 100%;\n    display: flex;\n    justify-content: space-evenly;\n    align-items: center;\n    background-color: var(--white);\n    border-radius: 2vmin;\n    margin-top: 325px;\n  }\n\n\n  .AuthPage .logo {\n    margin-left: 40px;\n  }\n  \n  .AuthPage h3 {\n    color: black;\n    padding: 2px;\n    transition: background-color 0.3s, box-shadow 0.3s;\n    border: .1rem solid black;\n    border-radius: .5vmin;\n    cursor: pointer;\n    font-size: 30px;\n    margin-right: 200px;\n    background-color: var(--sky-blue);\n  }\n  \n  .AuthPage h3:hover {\n    background-color: black;\n    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);\n    color: var(--sky-blue);\n  }\n\n\n  "],"sourceRoot":""}]);
 // Exports
 ___CSS_LOADER_EXPORT___.locals = {
-	"AuthPage": `RygkJgZmBHTETlLP3C3i`
+	"AuthPage": `RygkJgZmBHTETlLP3C3i`,
+	"logo": `CK5eNrxOxrUlH8arKKKJ`
 };
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (___CSS_LOADER_EXPORT___);
 
