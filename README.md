@@ -1,47 +1,18 @@
 # SHRED CAFE
 
+I am Bryce Sexton Jr. I'm currenntly learning how to code at General Assembly in hopes of becoming a fullstack web developer. This code is for a
 
 
-I am Bryce Sexton Jr. I'm currenntly learning how to code at General Assembly in hopes of becoming a fullstack web developer.
-
-
-
-## Steps
-
-**Install Gulp Globally**
-```bash
-npm i -g gulp-cli
-```
-
-**Start the dev server**
-```bash
+## Commands
 npm run dev
-```
-### or
-```bash
-yarn dev
-```
+npm run seed
+git add -A
+git commit -m "___"
+git push origin main
 
-**Start the dev server with proxy**
-```bash
-npm run proxy
-```
 
-**Build files for production**
-```bash
-yarn build
-```
-### or
 
-```bash
-npm run build
-```
 
-**Deploy for production script**
-```bash
-npm start
-```
-### or
-```bash
-yarn start
-```
+
+
+
